@@ -13,3 +13,4 @@ This directory contains public-safe integration guides for connecting coding age
 ## Current Guides
 
 - [Claude Code MCP guide](claude-code-mcp.md)
+- [Claude Code self-bootstrap guide](claude-code-self-bootstrap.md)

@@ -14,8 +14,10 @@ This directory contains public-safe research notes derived from experiments, com
 ## Current Notes
 
 - [SearXNG MCP integration for Claude Code](searxng-claude-code-mcp.md)
+- [MCP SearXNG server comparison](../comparisons/mcp-searxng-servers.md)
 
 ## Derived Guides
 
 - [Claude Code MCP guide](../integrations/claude-code-mcp.md)
+- [Claude Code self-bootstrap guide](../integrations/claude-code-self-bootstrap.md)
 - [SearXNG deployment hardening](../hardening/searxng-deployment.md)

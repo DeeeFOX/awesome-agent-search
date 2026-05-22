@@ -22,6 +22,7 @@ make generate-registry-index
 | --- | --- | --- | --- | --- | --- |
 | [Claude Code example](../examples/claude-code/README.md) | `integration` | `claude-code` | `starter` | `en` | Claude Code-oriented pattern for controlled search routing and project boundary hygiene. |
 | [Claude Code MCP guide](../docs/integrations/claude-code-mcp.md) | `integration` | `claude-code` | `starter` | `en` | Public-safe guide for routing Claude Code search through an MCP server backed by SearXNG. |
+| [Claude Code self-bootstrap guide](../docs/integrations/claude-code-self-bootstrap.md) | `integration` | `claude-code` | `experimental` | `en` | Step-by-step Claude Code guide for adding and verifying SearXNG-backed MCP search. |
 | [Codex example](../examples/codex/README.md) | `integration` | `codex` | `starter` | `en` | Codex-oriented pattern for explicit search flow, prompt boundaries, and public-safe configuration. |
 | [Generic example](../examples/generic/README.md) | `integration` | `generic` | `starter` | `en` | Minimal public-safe example entry point for cross-agent patterns. |
 | [OpenClaw example](../examples/openclaw/README.md) | `integration` | `openclaw` | `starter` | `en` | OpenClaw-oriented pattern for operator-approved search hooks, artifacts, and review gates. |
@@ -31,6 +32,7 @@ make generate-registry-index
 | Resource | Type | Ecosystem | Maturity | Language | Summary |
 | --- | --- | --- | --- | --- | --- |
 | [Evaluation](../docs/evaluation.md) | `research` | `multi-agent` | `starter` | `en` | Evaluation dimensions for comparing agent search approaches. |
+| [MCP SearXNG server comparison](../docs/comparisons/mcp-searxng-servers.md) | `research` | `claude-code` | `experimental` | `en` | Adapter matrix for SearXNG MCP bridge projects and Claude Code bootstrap readiness. |
 | [Research notes](../docs/research/README.md) | `research` | `multi-agent` | `starter` | `en` | Index of sanitized public research notes derived from experiments, comparisons, and integration studies. |
 | [Search backend comparison](../docs/comparisons/search-backends.md) | `research` | `multi-agent` | `starter` | `en` | Comparison of SearXNG, public instances, hosted search APIs, and direct web search for coding agents. |
 | [SearXNG MCP integration for Claude Code](../docs/research/searxng-claude-code-mcp.md) | `research` | `claude-code` | `starter` | `en` | Sanitized research note on using SearXNG through MCP for Claude Code and adjacent agent workflows. |
@@ -41,6 +43,7 @@ make generate-registry-index
 | --- | --- | --- | --- | --- | --- |
 | [Agent guide](../AGENTS.md) | `reference` | `multi-agent` | `recommended` | `en` | Repository-level operating rules for autonomous agent contributors. |
 | [Architecture](../docs/architecture.md) | `reference` | `multi-agent` | `recommended` | `en` | Repository structure and content-layer model for humans and AI agents. |
+| [Companion repository plan](../docs/companion-repository.md) | `reference` | `multi-agent` | `starter` | `en` | Boundary and launch criteria for a future installable oh-my-agent-search companion repository. |
 | [Hardening checklists](../docs/hardening/README.md) | `reference` | `multi-agent` | `starter` | `en` | Index of deployment and operational hardening checklists for SearXNG-backed agent search. |
 | [Internationalization policy](../docs/i18n.md) | `reference` | `multi-agent` | `recommended` | `en` | Bilingual documentation policy for English canonical docs and selected Chinese translations. |
 | [Integration guides](../docs/integrations/README.md) | `reference` | `multi-agent` | `starter` | `en` | Index of public-safe integration guides for connecting coding agents to SearXNG-backed search. |

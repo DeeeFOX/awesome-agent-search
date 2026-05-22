@@ -45,9 +45,12 @@ This repository collects practical patterns for using SearXNG as a privacy-aware
 
 - [Best practices](docs/best-practices.md) - query design, fallback, rate limits, logging, and source handling.
 - [Claude Code MCP guide](docs/integrations/claude-code-mcp.md) - explicit MCP search flow with safe boundaries.
+- [Claude Code self-bootstrap guide](docs/integrations/claude-code-self-bootstrap.md) - Claude Code-readable steps for adding and verifying SearXNG MCP search.
 - [SearXNG deployment hardening](docs/hardening/searxng-deployment.md) - operator checklist for safer agent search.
 - [SearXNG MCP research note](docs/research/searxng-claude-code-mcp.md) - sanitized findings derived from local research.
 - [Search backend comparison](docs/comparisons/search-backends.md) - SearXNG, public instances, hosted APIs, and direct search tradeoffs.
+- [MCP SearXNG server comparison](docs/comparisons/mcp-searxng-servers.md) - adapter matrix for Claude Code and future installable starters.
+- [Companion repository plan](docs/companion-repository.md) - boundary between this awesome list and a future `oh-my-agent-search` starter.
 - [Machine-readable registry](registry/resources.json) - structured resource map for humans and AI agents.
 - [Chinese best practices](docs/zh-CN/best-practices.md) - Chinese translation of the core guide.
 - [Registry index](docs/registry-index.md) - human-readable view generated from the machine registry.
@@ -73,6 +76,7 @@ This repository collects practical patterns for using SearXNG as a privacy-aware
 
 - [Integration guide index](docs/integrations/README.md)
 - [Claude Code MCP guide](docs/integrations/claude-code-mcp.md)
+- [Claude Code self-bootstrap guide](docs/integrations/claude-code-self-bootstrap.md)
 - [Codex example](examples/codex/README.md)
 - [Claude Code example](examples/claude-code/README.md)
 - [OpenClaw example](examples/openclaw/README.md)
@@ -86,9 +90,11 @@ This repository collects practical patterns for using SearXNG as a privacy-aware
 
 ### Research And Evaluation
 
+- [Companion repository plan](docs/companion-repository.md)
 - [Research note index](docs/research/README.md)
 - [SearXNG MCP integration for Claude Code](docs/research/searxng-claude-code-mcp.md)
 - [Search backend comparison](docs/comparisons/search-backends.md)
+- [MCP SearXNG server comparison](docs/comparisons/mcp-searxng-servers.md)
 - [Research report template](templates/research-report-template.md)
 
 ### Bilingual Docs
@@ -132,6 +138,8 @@ Durable resources must be registered in `registry/resources.json`. Translations 
 Use `awesome-agent-search` for this repository because it is a curated best-practices and integration hub.
 
 An `oh-my-*` name would imply an installable package, plugin framework, or one-command enhancement bundle. If this project later ships installable defaults, that should be a separate companion project such as `agent-search-starter`.
+
+See [Companion repository plan](docs/companion-repository.md) for the proposed `oh-my-agent-search` boundary.
 
 ## Inspired By
 

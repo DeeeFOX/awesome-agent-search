@@ -41,9 +41,12 @@ Coding agents 的质量很大程度取决于它们能否安全地获取外部信
 - [中文最佳实践](docs/zh-CN/best-practices.md) - 查询设计、fallback、rate limit、日志和来源处理。
 - [Best practices](docs/best-practices.md) - 英文 canonical version。
 - [Claude Code MCP guide](docs/integrations/claude-code-mcp.md) - 安全边界清晰的 MCP 搜索流程。
+- [Claude Code self-bootstrap guide](docs/integrations/claude-code-self-bootstrap.md) - 面向 Claude Code 自读自装的 SearXNG MCP 搜索接入流程。
 - [SearXNG deployment hardening](docs/hardening/searxng-deployment.md) - 面向部署者的加固清单。
 - [SearXNG MCP research note](docs/research/searxng-claude-code-mcp.md) - 从本地研究脱敏整理出的公开笔记。
 - [Search backend comparison](docs/comparisons/search-backends.md) - SearXNG、公共实例、hosted API 和 direct search 的取舍。
+- [MCP SearXNG server comparison](docs/comparisons/mcp-searxng-servers.md) - 面向 Claude Code 和未来安装型 starter 的 adapter 对比。
+- [Companion repository plan](docs/companion-repository.md) - 当前 awesome 仓库和未来 `oh-my-agent-search` starter 的边界。
 - [Machine-readable registry](registry/resources.json) - 面向人和 AI 的结构化资源目录。
 - [Registry index](docs/registry-index.md) - 从机器 registry 生成的人类可读资源目录。
 
@@ -69,6 +72,7 @@ Coding agents 的质量很大程度取决于它们能否安全地获取外部信
 
 - [Integration guide index](docs/integrations/README.md)
 - [Claude Code MCP guide](docs/integrations/claude-code-mcp.md)
+- [Claude Code self-bootstrap guide](docs/integrations/claude-code-self-bootstrap.md)
 - [Codex example](examples/codex/README.md)
 - [Claude Code example](examples/claude-code/README.md)
 - [OpenClaw example](examples/openclaw/README.md)
@@ -82,9 +86,11 @@ Coding agents 的质量很大程度取决于它们能否安全地获取外部信
 
 ### 研究和评估
 
+- [Companion repository plan](docs/companion-repository.md)
 - [Research note index](docs/research/README.md)
 - [SearXNG MCP integration for Claude Code](docs/research/searxng-claude-code-mcp.md)
 - [Search backend comparison](docs/comparisons/search-backends.md)
+- [MCP SearXNG server comparison](docs/comparisons/mcp-searxng-servers.md)
 - [Research report template](templates/research-report-template.md)
 
 ### 双语文档

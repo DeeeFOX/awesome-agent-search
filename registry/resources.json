@@ -94,6 +94,18 @@
       "public": true
     },
     {
+      "id": "companion-repository-plan",
+      "title": "Companion repository plan",
+      "type": "reference",
+      "ecosystem": "multi-agent",
+      "summary": "Boundary and launch criteria for a future installable oh-my-agent-search companion repository.",
+      "language": "en",
+      "path": "docs/companion-repository.md",
+      "tags": ["positioning", "oh-my", "starter", "governance"],
+      "maturity": "starter",
+      "public": true
+    },
+    {
       "id": "social-preview-guide",
       "title": "Social preview guide",
       "type": "reference",
@@ -213,6 +225,18 @@
       "public": true
     },
     {
+      "id": "claude-code-self-bootstrap",
+      "title": "Claude Code self-bootstrap guide",
+      "type": "integration",
+      "ecosystem": "claude-code",
+      "summary": "Step-by-step Claude Code guide for adding and verifying SearXNG-backed MCP search.",
+      "language": "en",
+      "path": "docs/integrations/claude-code-self-bootstrap.md",
+      "tags": ["claude-code", "mcp", "searxng", "bootstrap"],
+      "maturity": "experimental",
+      "public": true
+    },
+    {
       "id": "hardening-checklists",
       "title": "Hardening checklists",
       "type": "reference",
@@ -277,6 +301,18 @@
       "path": "docs/comparisons/search-backends.md",
       "tags": ["comparison", "search", "searxng", "privacy"],
       "maturity": "starter",
+      "public": true
+    },
+    {
+      "id": "mcp-searxng-server-comparison",
+      "title": "MCP SearXNG server comparison",
+      "type": "research",
+      "ecosystem": "claude-code",
+      "summary": "Adapter matrix for SearXNG MCP bridge projects and Claude Code bootstrap readiness.",
+      "language": "en",
+      "path": "docs/comparisons/mcp-searxng-servers.md",
+      "tags": ["comparison", "mcp", "searxng", "claude-code"],
+      "maturity": "experimental",
       "public": true
     },
     {

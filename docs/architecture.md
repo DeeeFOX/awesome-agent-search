@@ -33,6 +33,7 @@ This layer helps AI systems discover repository structure, entry points, and con
 - `docs/zh-CN/`: Chinese translations for selected high-value docs
 - `docs/comparisons/`: backend and approach comparisons for search strategy decisions
 - `docs/integrations/`: public-safe agent integration guides
+- `docs/companion-repository.md`: boundary for a future installable `oh-my-agent-search` starter
 - `docs/hardening/`: deployment and operational hardening checklists
 - `docs/research/`: sanitized research notes derived from public-safe experiments and drafts
 - `examples/`: ecosystem-specific integration patterns
