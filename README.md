@@ -1,97 +1,158 @@
-# awesome-agent-search
+# Awesome Agent Search
 
 English | [中文](README.zh-CN.md)
 
 [![Registry](https://img.shields.io/github/actions/workflow/status/DeeeFOX/awesome-agent-search/validate-registry.yml?branch=main&label=registry)](https://github.com/DeeeFOX/awesome-agent-search/actions/workflows/validate-registry.yml)
 ![Scope](https://img.shields.io/badge/focus-agent%20search-0b7285)
 ![Engine](https://img.shields.io/badge/powered%20by-SearXNG-5c940d)
+![Style](https://img.shields.io/badge/style-awesome--list-7950f2)
 
-A curated, AI-readable hub for improving coding-agent search with SearXNG.
+> SearXNG-powered search best practices for Codex, Claude Code, OpenClaw, and other coding agents.
 
-It collects public-safe best practices, integration patterns, evaluation methods, and research templates for Codex, Claude Code, OpenClaw, and other coding agents.
+A curated, public-safe, AI-readable guide to better coding-agent search: query design, SearXNG integration, MCP patterns, deployment hardening, evaluation, and research notes.
+
+## Contents
+
+- [Why This Exists](#why-this-exists)
+- [Start Here](#start-here)
+- [Featured Resources](#featured-resources)
+- [Ecosystem Entrypoints](#ecosystem-entrypoints)
+- [Curated Sections](#curated-sections)
+- [For AI Agents](#for-ai-agents)
+- [Why Awesome, Not Oh My](#why-awesome-not-oh-my)
+- [Inspired By](#inspired-by)
+- [Contributing](#contributing)
+
+## Why This Exists
+
+Coding agents are only as good as the information they can safely retrieve. Search becomes risky when agents send private context to the web, trust weak sources, over-query public instances, or hide retrieval inside broad prompts.
+
+This repository collects practical patterns for using SearXNG as a privacy-aware search layer for coding agents.
 
 ## Start Here
 
 | Audience | Entry point | Use it for |
 | --- | --- | --- |
-| Humans | [docs/best-practices.md](docs/best-practices.md) | Understand privacy-aware search patterns. |
-| Chinese readers | [README.zh-CN.md](README.zh-CN.md) | Read the Chinese entry point and translated core docs. |
-| AI agents | [AGENTS.md](AGENTS.md) | Follow repository rules before editing. |
-| Maintainers | [docs/submission-guide.md](docs/submission-guide.md) | Review issues, PRs, and research notes. |
-| Researchers | [docs/research/README.md](docs/research/README.md) | Read public-safe research notes and add new findings. |
-| Integrators | [examples/](examples) | Adapt a minimal pattern for an agent runtime. |
-| Operators | [docs/hardening/searxng-deployment.md](docs/hardening/searxng-deployment.md) | Harden SearXNG-backed agent search. |
-| Launch reviewers | [docs/launch-checklist.md](docs/launch-checklist.md) | Verify public-readiness before announcing. |
+| Humans | [Best practices](docs/best-practices.md) | Learn privacy-aware agent search patterns. |
+| Chinese readers | [中文 README](README.zh-CN.md) | Read the Chinese entry point and translated core docs. |
+| AI agents | [AGENTS.md](AGENTS.md) | Follow editing, validation, and privacy rules. |
+| Integrators | [Integration guides](docs/integrations/README.md) | Connect agents to SearXNG-backed search. |
+| Operators | [Deployment hardening](docs/hardening/searxng-deployment.md) | Harden SearXNG for agent workflows. |
+| Researchers | [Research notes](docs/research/README.md) | Read and contribute public-safe findings. |
+| Maintainers | [Submission guide](docs/submission-guide.md) | Review issues, PRs, and registry entries. |
+
+## Featured Resources
+
+- [Best practices](docs/best-practices.md) - query design, fallback, rate limits, logging, and source handling.
+- [Claude Code MCP guide](docs/integrations/claude-code-mcp.md) - explicit MCP search flow with safe boundaries.
+- [SearXNG deployment hardening](docs/hardening/searxng-deployment.md) - operator checklist for safer agent search.
+- [SearXNG MCP research note](docs/research/searxng-claude-code-mcp.md) - sanitized findings derived from local research.
+- [Machine-readable registry](registry/resources.json) - structured resource map for humans and AI agents.
+- [Chinese best practices](docs/zh-CN/best-practices.md) - Chinese translation of the core guide.
 
 ## Ecosystem Entrypoints
 
-| Ecosystem | Example | Focus |
+| Ecosystem | Resource | Focus |
 | --- | --- | --- |
-| Codex | [examples/codex/README.md](examples/codex/README.md) | Search as an explicit, auditable tool path. |
-| Claude Code | [docs/integrations/claude-code-mcp.md](docs/integrations/claude-code-mcp.md) | MCP search integration with safe project boundaries. |
-| OpenClaw | [examples/openclaw/README.md](examples/openclaw/README.md) | Operator-managed search hooks and review gates. |
-| Generic agents | [examples/generic/README.md](examples/generic/README.md) | Cross-agent patterns that avoid runtime-specific assumptions. |
+| Codex | [Codex example](examples/codex/README.md) | Search as an explicit, auditable tool path. |
+| Claude Code | [Claude Code MCP guide](docs/integrations/claude-code-mcp.md) | MCP-backed search with project-boundary hygiene. |
+| OpenClaw | [OpenClaw example](examples/openclaw/README.md) | Operator-managed search hooks and review gates. |
+| Generic agents | [Generic example](examples/generic/README.md) | Cross-agent patterns without runtime-specific assumptions. |
 
-## Positioning
+## Curated Sections
 
-This repository is intentionally an `awesome-*` style project: curated guidance, examples, and registry data.
+### Best Practices
 
-It is not an `oh-my-*` installation bundle. If this work later needs installable defaults or automation, that should live in a separate companion project.
+- [Core best practices](docs/best-practices.md)
+- [Known issues and decisions](docs/known-issues.md)
+- [Evaluation dimensions](docs/evaluation.md)
 
-See [docs/positioning.md](docs/positioning.md) for the naming and maintenance rationale.
+### Integrations
 
-## What This Repository Contains
+- [Integration guide index](docs/integrations/README.md)
+- [Claude Code MCP guide](docs/integrations/claude-code-mcp.md)
+- [Codex example](examples/codex/README.md)
+- [Claude Code example](examples/claude-code/README.md)
+- [OpenClaw example](examples/openclaw/README.md)
+- [Generic example](examples/generic/README.md)
 
-- privacy-aware search patterns
-- integration guides
-- deployment hardening checklists
-- bilingual entry points for English and Chinese readers
-- agent-specific integration examples
-- structured machine-readable resources
-- research and evaluation templates
-- public-safe research notes
-- contribution workflows for humans and AI agents
+### Hardening
 
-## Quick Start
+- [Hardening checklist index](docs/hardening/README.md)
+- [SearXNG deployment hardening](docs/hardening/searxng-deployment.md)
+- [Security policy](SECURITY.md)
 
-1. Read [docs/positioning.md](docs/positioning.md).
-2. Read [docs/best-practices.md](docs/best-practices.md).
-3. Review [registry/resources.json](registry/resources.json).
-4. Pick the closest example under [examples/](examples).
-5. Use [templates/](templates) for new integration or research submissions.
-6. Run `make review` before opening a PR.
+### Research And Evaluation
 
-## Design Principles
+- [Research note index](docs/research/README.md)
+- [SearXNG MCP integration for Claude Code](docs/research/searxng-claude-code-mcp.md)
+- [Research report template](templates/research-report-template.md)
 
-- privacy first
-- reproducible guidance
-- small, composable patterns
-- machine-readable structure
-- public-safe examples only
+### Bilingual Docs
+
+- [Chinese README](README.zh-CN.md)
+- [Chinese docs index](docs/zh-CN/README.md)
+- [Chinese best practices](docs/zh-CN/best-practices.md)
+- [Internationalization policy](docs/i18n.md)
+
+### Machine-Readable Layer
+
+- [Agent guide](AGENTS.md)
+- [Resource registry](registry/resources.json)
+- [Resource schema](schemas/resource.schema.json)
+- [Registry validator](scripts/validate-registry.mjs)
+
+## For AI Agents
+
+This repository is designed to be read by agents, not only humans.
+
+AI agents should:
+
+1. Read [AGENTS.md](AGENTS.md).
+2. Read [registry/resources.json](registry/resources.json).
+3. Pick the closest guide, example, or template.
+4. Keep every query, endpoint, path, and example public-safe.
+5. Run `make review` before submitting changes.
+
+Durable resources must be registered in `registry/resources.json`. Translations should use `language` and `translationOf` metadata.
+
+## Why Awesome, Not Oh My
+
+Use `awesome-agent-search` for this repository because it is a curated best-practices and integration hub.
+
+An `oh-my-*` name would imply an installable package, plugin framework, or one-command enhancement bundle. If this project later ships installable defaults, that should be a separate companion project such as `agent-search-starter`.
+
+## Inspired By
+
+- [sindresorhus/awesome](https://github.com/sindresorhus/awesome) - curated-list conventions.
+- [ohmyzsh/ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) - community docs and onboarding structure.
+- [subinium/awesome-claude-code](https://github.com/subinium/awesome-claude-code) - AI coding-agent ecosystem taxonomy.
+- [searxng/searx-instances](https://github.com/searxng/searx-instances) - structured submission and review workflow.
+- [SearXNG docs](https://docs.searxng.org/) - SearXNG behavior, configuration, and operations.
 
 ## Repository Layout
 
-- [docs/](docs): positioning, architecture, integrations, hardening, i18n, research, evaluation, launch, and submission guidance
-- [examples/](examples): minimal integration patterns by ecosystem
-- [registry/resources.json](registry/resources.json): machine-readable catalog
-- [templates/](templates): reusable authoring templates
-- [schemas/](schemas): schema for structured registry data
+- [docs/](docs): positioning, architecture, integrations, hardening, i18n, research, evaluation, launch, and submission guidance.
+- [examples/](examples): minimal integration patterns by ecosystem.
+- [registry/resources.json](registry/resources.json): machine-readable catalog.
+- [templates/](templates): reusable integration and research templates.
+- [schemas/](schemas): schema for structured registry data.
 
 ## Suggested GitHub Topics
 
 `awesome-list`, `agents`, `coding-agents`, `searxng`, `codex`, `claude-code`, `openclaw`, `search`, `privacy`, `agent-tools`
 
-## v0.1 Roadmap
-
-- publish the core best-practice guide
-- keep the registry complete for durable docs and examples
-- add one minimal integration pattern per supported ecosystem
-- add repeatable evaluation notes for relevance, latency, and privacy cost
-- keep public examples free of secrets, session material, private endpoints, and personal identifiers
-
 ## Contributing
 
-Read [CONTRIBUTING.md](CONTRIBUTING.md) and [SECURITY.md](SECURITY.md) before opening a PR.
+Read [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md), and [AGENTS.md](AGENTS.md) before opening a PR.
+
+Run:
+
+```sh
+make review
+```
+
+Substantial contributions should state the problem, approach, expected benefit, privacy considerations, and acceptance criteria.
 
 ## License
 
