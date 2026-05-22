@@ -14,3 +14,4 @@ This directory contains public-safe integration guides for connecting coding age
 
 - [Claude Code MCP guide](claude-code-mcp.md)
 - [Claude Code self-bootstrap guide](claude-code-self-bootstrap.md)
+- [Claude Code post-install lifecycle](claude-code-post-install-lifecycle.md)

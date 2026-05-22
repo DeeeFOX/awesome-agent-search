@@ -40,6 +40,7 @@ Use this checklist before connecting a coding agent to a SearXNG instance.
 - keep environment-sensitive availability notes dated
 - disable engines that frequently trigger rate limits or CAPTCHA
 - avoid broad fan-out unless the workflow explains how results are filtered
+- do not document bypass steps for engines that are unavailable in a region; choose lawful reachable engines instead
 
 ## Rate Limits And Reliability
 

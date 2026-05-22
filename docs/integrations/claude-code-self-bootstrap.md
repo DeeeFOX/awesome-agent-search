@@ -77,16 +77,17 @@ For a first Claude Code smoke test, use a local stdio server. It keeps the serve
 Candidate command shape:
 
 ```sh
-claude mcp add --transport stdio --scope local --env SEARXNG_URL=https://search.example.org searxng -- npx -y mcp-searxng
+claude mcp add -s local -e SEARXNG_URL=https://search.example.org -t stdio searxng -- npx -y mcp-searxng
 ```
 
 Notes:
 
 - options must come before the server name
 - `--` separates Claude Code options from the MCP server command
-- `--scope local` keeps the configuration private to the current project
-- use `--scope user` only when the same trusted search setup should be available across projects
-- avoid `--scope project` until the team agrees to commit `.mcp.json`
+- `-s local` keeps the configuration private to the current project
+- use `-s user` only when the same trusted search setup should be available across projects
+- avoid `-s project` until the team agrees to commit `.mcp.json`
+- run `claude mcp add --help` first if your Claude Code version uses different option names
 
 ## Step 3: Confirm Claude Code Sees The Server
 
@@ -153,6 +154,22 @@ Expected answer:
 - it refuses to include private context in search
 - it proposes a sanitized public query instead
 - it asks for operator approval when a query may reveal private intent
+
+## Step 7: Confirm Lifecycle And Scope
+
+Read [Claude Code post-install lifecycle](claude-code-post-install-lifecycle.md), then ask Claude Code:
+
+```text
+If I close Claude Code and reopen it in another folder, will SearXNG search still work? Please answer based on the actual MCP scope and service status. Do not print private endpoints or local paths.
+```
+
+Acceptance criteria:
+
+- the answer names the actual MCP scope
+- it explains whether the scope is current-project only, user-wide, or project-config based
+- it separates Claude Code restart behavior from SearXNG service uptime
+- it does not expose private endpoints, local paths, usernames, emails, or raw command output
+- it does not recommend bypassing regional search-engine restrictions
 
 ## Troubleshooting
 

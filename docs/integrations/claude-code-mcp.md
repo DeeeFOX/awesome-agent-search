@@ -89,6 +89,16 @@ Do not present the fallback as equivalent to MCP. It is more portable, but weake
 - Keep authentication and proxy values local.
 - Avoid copying private repository text into queries.
 - Treat regional availability and latency claims as dated observations unless revalidated.
+- If a search engine is unavailable in a deployment region, select lawful reachable engines for that region; do not publish bypass instructions, proxy details, or evasion steps.
+
+## Post-Install Lifecycle
+
+After installation, search availability depends on two separate layers:
+
+- Claude Code still has an active MCP configuration in the current `local`, `user`, or `project` scope.
+- The configured SearXNG endpoint or local service is still reachable.
+
+For restart, second-client, and cross-folder behavior, see [Claude Code post-install lifecycle](claude-code-post-install-lifecycle.md).
 
 ## Acceptance Criteria
 

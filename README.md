@@ -46,6 +46,7 @@ This repository collects practical patterns for using SearXNG as a privacy-aware
 - [Best practices](docs/best-practices.md) - query design, fallback, rate limits, logging, and source handling.
 - [Claude Code MCP guide](docs/integrations/claude-code-mcp.md) - explicit MCP search flow with safe boundaries.
 - [Claude Code self-bootstrap guide](docs/integrations/claude-code-self-bootstrap.md) - Claude Code-readable steps for adding and verifying SearXNG MCP search.
+- [Claude Code post-install lifecycle](docs/integrations/claude-code-post-install-lifecycle.md) - restart, second-client, cross-folder, and scope behavior after setup.
 - [SearXNG deployment hardening](docs/hardening/searxng-deployment.md) - operator checklist for safer agent search.
 - [SearXNG MCP research note](docs/research/searxng-claude-code-mcp.md) - sanitized findings derived from local research.
 - [Search backend comparison](docs/comparisons/search-backends.md) - SearXNG, public instances, hosted APIs, and direct search tradeoffs.
@@ -77,6 +78,7 @@ This repository collects practical patterns for using SearXNG as a privacy-aware
 - [Integration guide index](docs/integrations/README.md)
 - [Claude Code MCP guide](docs/integrations/claude-code-mcp.md)
 - [Claude Code self-bootstrap guide](docs/integrations/claude-code-self-bootstrap.md)
+- [Claude Code post-install lifecycle](docs/integrations/claude-code-post-install-lifecycle.md)
 - [Codex example](examples/codex/README.md)
 - [Claude Code example](examples/claude-code/README.md)
 - [OpenClaw example](examples/openclaw/README.md)
@@ -129,7 +131,8 @@ AI agents should:
 2. Read [registry/resources.json](registry/resources.json).
 3. Pick the closest guide, example, or template.
 4. Keep every query, endpoint, path, and example public-safe.
-5. Run `make review` before submitting changes.
+5. After Claude Code setup, use [post-install lifecycle](docs/integrations/claude-code-post-install-lifecycle.md) to verify scope, restart, and cross-folder behavior.
+6. Run `make review` before submitting changes.
 
 Durable resources must be registered in `registry/resources.json`. Translations should use `language` and `translationOf` metadata.
 

@@ -237,6 +237,31 @@
       "public": true
     },
     {
+      "id": "claude-code-post-install-lifecycle",
+      "title": "Claude Code post-install lifecycle",
+      "type": "integration",
+      "ecosystem": "claude-code",
+      "summary": "Lifecycle guide for Claude Code SearXNG MCP setup across restarts, clients, folders, and MCP scopes.",
+      "language": "en",
+      "path": "docs/integrations/claude-code-post-install-lifecycle.md",
+      "tags": ["claude-code", "mcp", "searxng", "lifecycle", "scope"],
+      "maturity": "starter",
+      "public": true
+    },
+    {
+      "id": "claude-code-post-install-lifecycle-zh-cn",
+      "title": "Claude Code 安装后的生命周期",
+      "type": "integration",
+      "ecosystem": "claude-code",
+      "summary": "Claude Code 接入 SearXNG MCP 后，关于重启、跨目录、服务生命周期和 scope 的中文说明。",
+      "language": "zh-CN",
+      "translationOf": "claude-code-post-install-lifecycle",
+      "path": "docs/zh-CN/claude-code-post-install-lifecycle.md",
+      "tags": ["claude-code", "mcp", "searxng", "lifecycle", "scope", "zh-CN"],
+      "maturity": "starter",
+      "public": true
+    },
+    {
       "id": "hardening-checklists",
       "title": "Hardening checklists",
       "type": "reference",

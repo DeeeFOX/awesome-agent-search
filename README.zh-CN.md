@@ -42,6 +42,7 @@ Coding agents 的质量很大程度取决于它们能否安全地获取外部信
 - [Best practices](docs/best-practices.md) - 英文 canonical version。
 - [Claude Code MCP guide](docs/integrations/claude-code-mcp.md) - 安全边界清晰的 MCP 搜索流程。
 - [Claude Code self-bootstrap guide](docs/integrations/claude-code-self-bootstrap.md) - 面向 Claude Code 自读自装的 SearXNG MCP 搜索接入流程。
+- [Claude Code post-install lifecycle](docs/integrations/claude-code-post-install-lifecycle.md) - 安装后的重启、第二客户端、跨目录和 scope 行为。
 - [SearXNG deployment hardening](docs/hardening/searxng-deployment.md) - 面向部署者的加固清单。
 - [SearXNG MCP research note](docs/research/searxng-claude-code-mcp.md) - 从本地研究脱敏整理出的公开笔记。
 - [Search backend comparison](docs/comparisons/search-backends.md) - SearXNG、公共实例、hosted API 和 direct search 的取舍。
@@ -73,6 +74,7 @@ Coding agents 的质量很大程度取决于它们能否安全地获取外部信
 - [Integration guide index](docs/integrations/README.md)
 - [Claude Code MCP guide](docs/integrations/claude-code-mcp.md)
 - [Claude Code self-bootstrap guide](docs/integrations/claude-code-self-bootstrap.md)
+- [Claude Code post-install lifecycle](docs/integrations/claude-code-post-install-lifecycle.md)
 - [Codex example](examples/codex/README.md)
 - [Claude Code example](examples/claude-code/README.md)
 - [OpenClaw example](examples/openclaw/README.md)
@@ -124,7 +126,8 @@ AI agents 应该：
 2. 读取 [registry/resources.json](registry/resources.json)。
 3. 选择最接近的 guide、example 或 template。
 4. 保持 query、endpoint、path 和 example 公开安全。
-5. 提交前运行 `make review`。
+5. Claude Code 接入完成后，使用 [post-install lifecycle](docs/integrations/claude-code-post-install-lifecycle.md) 验证 scope、重启和跨目录行为。
+6. 提交前运行 `make review`。
 
 长期可用资源必须写入 `registry/resources.json`。翻译资源应使用 `language` 和 `translationOf` 元数据。
 

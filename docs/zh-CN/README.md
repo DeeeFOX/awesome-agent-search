@@ -7,11 +7,13 @@
 ## 当前翻译
 
 - [最佳实践](best-practices.md)
+- [Claude Code 安装后的生命周期](claude-code-post-install-lifecycle.md)
 
 ## 相关英文文档
 
 - [Best practices](../best-practices.md)
 - [Claude Code MCP guide](../integrations/claude-code-mcp.md)
+- [Claude Code post-install lifecycle](../integrations/claude-code-post-install-lifecycle.md)
 - [SearXNG deployment hardening](../hardening/searxng-deployment.md)
 - [Research notes](../research/README.md)
 - [Internationalization policy](../i18n.md)

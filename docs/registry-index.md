@@ -22,6 +22,8 @@ make generate-registry-index
 | --- | --- | --- | --- | --- | --- |
 | [Claude Code example](../examples/claude-code/README.md) | `integration` | `claude-code` | `starter` | `en` | Claude Code-oriented pattern for controlled search routing and project boundary hygiene. |
 | [Claude Code MCP guide](../docs/integrations/claude-code-mcp.md) | `integration` | `claude-code` | `starter` | `en` | Public-safe guide for routing Claude Code search through an MCP server backed by SearXNG. |
+| [Claude Code post-install lifecycle](../docs/integrations/claude-code-post-install-lifecycle.md) | `integration` | `claude-code` | `starter` | `en` | Lifecycle guide for Claude Code SearXNG MCP setup across restarts, clients, folders, and MCP scopes. |
+| [Claude Code 安装后的生命周期](../docs/zh-CN/claude-code-post-install-lifecycle.md) | `integration` | `claude-code` | `starter` | `zh-CN` -> `claude-code-post-install-lifecycle` | Claude Code 接入 SearXNG MCP 后，关于重启、跨目录、服务生命周期和 scope 的中文说明。 |
 | [Claude Code self-bootstrap guide](../docs/integrations/claude-code-self-bootstrap.md) | `integration` | `claude-code` | `experimental` | `en` | Step-by-step Claude Code guide for adding and verifying SearXNG-backed MCP search. |
 | [Codex example](../examples/codex/README.md) | `integration` | `codex` | `starter` | `en` | Codex-oriented pattern for explicit search flow, prompt boundaries, and public-safe configuration. |
 | [Generic example](../examples/generic/README.md) | `integration` | `generic` | `starter` | `en` | Minimal public-safe example entry point for cross-agent patterns. |
