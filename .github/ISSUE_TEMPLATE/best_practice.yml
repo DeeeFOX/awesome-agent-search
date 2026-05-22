@@ -1,0 +1,41 @@
+name: Best Practice
+description: Propose a reusable best practice for agent search.
+title: "[Best Practice] "
+labels:
+  - best-practice
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What repeated problem does this practice solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Approach
+      description: Describe the practice clearly and briefly.
+    validations:
+      required: true
+  - type: textarea
+    id: benefit
+    attributes:
+      label: Expected Benefit
+      description: What improvement should this practice create?
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: Define what must be true for this contribution to be complete.
+    validations:
+      required: true
+  - type: textarea
+    id: privacy
+    attributes:
+      label: Privacy Notes
+      description: Note any privacy, data, or public-sharing constraints.
+    validations:
+      required: false

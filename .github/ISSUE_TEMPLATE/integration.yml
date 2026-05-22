@@ -1,0 +1,53 @@
+name: Integration
+description: Propose a new integration example or integration improvement.
+title: "[Integration] "
+labels:
+  - integration
+body:
+  - type: input
+    id: ecosystem
+    attributes:
+      label: Ecosystem
+      placeholder: codex / claude-code / openclaw / generic
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What integration gap or repeated workflow does this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: approach
+    attributes:
+      label: Approach
+      description: Describe the integration pattern or example.
+    validations:
+      required: true
+  - type: textarea
+    id: benefit
+    attributes:
+      label: Expected Benefit
+      description: What should improve if this integration is accepted?
+    validations:
+      required: true
+  - type: textarea
+    id: privacy
+    attributes:
+      label: Privacy Notes
+      description: Note any public-sharing or data-safety constraints.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+    validations:
+      required: true
+  - type: textarea
+    id: non_goals
+    attributes:
+      label: Non-goals
+    validations:
+      required: false

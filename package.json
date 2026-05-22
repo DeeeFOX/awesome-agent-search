@@ -1,0 +1,9 @@
+{
+  "name": "awesome-agent-search",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node --check scripts/validate-registry.mjs",
+    "validate-registry": "node scripts/validate-registry.mjs"
+  }
+}
