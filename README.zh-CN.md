@@ -175,18 +175,6 @@ AI agents 应该：
 - [templates/](templates): 可复用的集成和研究模板。
 - [schemas/](schemas): registry 数据结构 schema。
 
-## 建议 GitHub Topics
-
-`awesome-list`, `awesome`, `agents`, `ai-agents`, `coding-agents`, `agent-search`, `agent-tools`, `searxng`, `mcp`, `model-context-protocol`, `claude-code`, `codex`, `openclaw`, `web-search`, `search`, `privacy`, `retrieval`, `llm`, `llm-tools`, `developer-tools`
-
-中文搜索发现主要依赖真实 Markdown 内容和 README 互链。
-
-## 搜索关键词
-
-本仓库适合被这些自然语言关键词发现：`SearXNG search for coding agents`、`Claude Code MCP web search`、`Codex web search best practices`、`OpenClaw search integration`、`privacy-aware agent search`、`AI agent search evaluation`、`MCP SearXNG bridge`、`Claude Code 联网搜索`、`SearXNG MCP 接入`、`coding agent 搜索最佳实践`。
-
-完整发布和发现清单见 [仓库曝光清单](docs/zh-CN/visibility-checklist.md)。
-
 ## 贡献
 
 提交前阅读 [CONTRIBUTING.md](CONTRIBUTING.md)、[SECURITY.md](SECURITY.md) 和 [AGENTS.md](AGENTS.md)。

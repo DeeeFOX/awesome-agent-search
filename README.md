@@ -174,16 +174,6 @@ See [Companion repository boundary](docs/companion-repository.md) for the split 
 - [templates/](templates): reusable integration and research templates.
 - [schemas/](schemas): schema for structured registry data.
 
-## Suggested GitHub Topics
-
-`awesome-list`, `awesome`, `agents`, `ai-agents`, `coding-agents`, `agent-search`, `agent-tools`, `searxng`, `mcp`, `model-context-protocol`, `claude-code`, `codex`, `openclaw`, `web-search`, `search`, `privacy`, `retrieval`, `llm`, `llm-tools`, `developer-tools`
-
-## Search Keywords
-
-Natural discovery terms for this repository include `SearXNG search for coding agents`, `Claude Code MCP web search`, `Codex web search best practices`, `OpenClaw search integration`, `privacy-aware agent search`, `AI agent search evaluation`, and `MCP SearXNG bridge`.
-
-For the full launch and discovery checklist, see [Repository visibility checklist](docs/visibility-checklist.md).
-
 ## Contributing
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md), and [AGENTS.md](AGENTS.md) before opening a PR.
