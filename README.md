@@ -140,6 +140,7 @@ For runnable setup, use [oh-my-agent-search](https://github.com/DeeeFOX/oh-my-ag
 - [Launch checklist](docs/launch-checklist.md)
 - [Repository visibility checklist](docs/visibility-checklist.md)
 - [v0.1.0 release notes draft](docs/release-notes/v0.1.0.md)
+- [v0.2.0 release notes draft](docs/release-notes/v0.2.0.md)
 
 ## For AI Agents
 

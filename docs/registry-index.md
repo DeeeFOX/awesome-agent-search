@@ -75,6 +75,8 @@ make generate-registry-index
 | [Submission guide](../docs/submission-guide.md) | `reference` | `multi-agent` | `recommended` | `en` | Contribution requirements for public-safe docs, examples, and research notes. |
 | [v0.1.0 release notes](../docs/release-notes/v0.1.0.md) | `reference` | `multi-agent` | `starter` | `en` | Draft GitHub release notes for the first public Awesome Agent Search release. |
 | [v0.1.0 release notes zh-CN](../docs/zh-CN/release-v0.1.0.md) | `reference` | `multi-agent` | `starter` | `zh-CN` -> `v0-1-0-release-notes` | 首个公开 release notes 的中文对照草案。 |
+| [v0.2.0 release notes](../docs/release-notes/v0.2.0.md) | `reference` | `multi-agent` | `starter` | `en` | Release notes for broadening Awesome Agent Search into multi-backend search integration research. |
+| [v0.2.0 release notes zh-CN](../docs/zh-CN/release-v0.2.0.md) | `reference` | `multi-agent` | `starter` | `zh-CN` -> `v0-2-0-release-notes` | 将 Awesome Agent Search 扩展为 multi-backend search integration research 的中文 release notes。 |
 | [中文搜索发现](../docs/zh-CN/discovery.md) | `reference` | `multi-agent` | `starter` | `zh-CN` | Chinese keyword and entry-point page for GitHub search discovery and AI-agent navigation. |
 | [Chinese documentation index](../docs/zh-CN/README.md) | `reference` | `multi-agent` | `starter` | `zh-CN` | Chinese-language index for translated docs and bilingual navigation. |
 

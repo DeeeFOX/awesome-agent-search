@@ -143,6 +143,7 @@ Coding agents 的质量很大程度取决于它们能否安全地获取外部信
 - [Launch checklist](docs/launch-checklist.md)
 - [仓库曝光清单](docs/zh-CN/visibility-checklist.md)
 - [v0.1.0 release notes 草案](docs/zh-CN/release-v0.1.0.md)
+- [v0.2.0 release notes 草案](docs/zh-CN/release-v0.2.0.md)
 
 ## 给 AI Agents
 

@@ -17,6 +17,7 @@
 - [SearXNG MCP 与 Claude Code 集成研究](searxng-claude-code-mcp.md)
 - [仓库曝光清单](visibility-checklist.md)
 - [v0.1.0 Release Notes](release-v0.1.0.md)
+- [v0.2.0 Release Notes](release-v0.2.0.md)
 - [对比调研 Issue Backlog](comparison-issues.md)
 
 ## 相关英文文档
@@ -31,6 +32,7 @@
 - [SearXNG MCP integration for Claude Code](../research/searxng-claude-code-mcp.md)
 - [Repository visibility checklist](../visibility-checklist.md)
 - [v0.1.0 release notes](../release-notes/v0.1.0.md)
+- [v0.2.0 release notes](../release-notes/v0.2.0.md)
 - [Research notes](../research/README.md)
 - [Internationalization policy](../i18n.md)
 

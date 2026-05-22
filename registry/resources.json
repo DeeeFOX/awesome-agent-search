@@ -371,6 +371,31 @@
       "public": true
     },
     {
+      "id": "v0-2-0-release-notes",
+      "title": "v0.2.0 release notes",
+      "type": "reference",
+      "ecosystem": "multi-agent",
+      "summary": "Release notes for broadening Awesome Agent Search into multi-backend search integration research.",
+      "language": "en",
+      "path": "docs/release-notes/v0.2.0.md",
+      "tags": ["launch", "release", "sharing", "positioning"],
+      "maturity": "starter",
+      "public": true
+    },
+    {
+      "id": "v0-2-0-release-notes-zh-cn",
+      "title": "v0.2.0 release notes zh-CN",
+      "type": "reference",
+      "ecosystem": "multi-agent",
+      "summary": "将 Awesome Agent Search 扩展为 multi-backend search integration research 的中文 release notes。",
+      "language": "zh-CN",
+      "translationOf": "v0-2-0-release-notes",
+      "path": "docs/zh-CN/release-v0.2.0.md",
+      "tags": ["launch", "release", "sharing", "positioning", "translation", "zh-cn"],
+      "maturity": "starter",
+      "public": true
+    },
+    {
       "id": "submission-guide",
       "title": "Submission guide",
       "type": "reference",
