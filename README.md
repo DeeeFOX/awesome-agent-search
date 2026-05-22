@@ -49,6 +49,7 @@ This repository collects practical patterns for using SearXNG as a privacy-aware
 - [SearXNG MCP research note](docs/research/searxng-claude-code-mcp.md) - sanitized findings derived from local research.
 - [Machine-readable registry](registry/resources.json) - structured resource map for humans and AI agents.
 - [Chinese best practices](docs/zh-CN/best-practices.md) - Chinese translation of the core guide.
+- [Registry index](docs/registry-index.md) - human-readable view generated from the machine registry.
 
 ## Ecosystem Entrypoints
 
@@ -99,8 +100,15 @@ This repository collects practical patterns for using SearXNG as a privacy-aware
 
 - [Agent guide](AGENTS.md)
 - [Resource registry](registry/resources.json)
+- [Registry index](docs/registry-index.md)
 - [Resource schema](schemas/resource.schema.json)
 - [Registry validator](scripts/validate-registry.mjs)
+
+### Launch And Sharing
+
+- [Social preview guide](docs/social-preview.md)
+- [Social preview PNG](assets/social-preview.png)
+- [Launch checklist](docs/launch-checklist.md)
 
 ## For AI Agents
 

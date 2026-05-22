@@ -63,6 +63,8 @@ Every substantial contribution should clarify:
 
 When adding a durable resource, also update `registry/resources.json`.
 
+When changing `registry/resources.json`, run `make generate-registry-index` or `make review` so `docs/registry-index.md` stays current.
+
 Use `templates/research-report-template.md` for research notes and `templates/integration-template.md` for new integration examples.
 
 ## Issue vs Patch

@@ -36,6 +36,7 @@ This layer helps AI systems discover repository structure, entry points, and con
 - `docs/research/`: sanitized research notes derived from public-safe experiments and drafts
 - `examples/`: ecosystem-specific integration patterns
 - `registry/`: canonical structured catalog of repository resources
+- `docs/registry-index.md`: generated human-readable view of the registry
 - `schemas/`: validation contract for registry structure
 - `templates/`: reusable contribution templates
 - `.github/`: contribution workflow and automation

@@ -44,6 +44,7 @@ Coding agents 的质量很大程度取决于它们能否安全地获取外部信
 - [SearXNG deployment hardening](docs/hardening/searxng-deployment.md) - 面向部署者的加固清单。
 - [SearXNG MCP research note](docs/research/searxng-claude-code-mcp.md) - 从本地研究脱敏整理出的公开笔记。
 - [Machine-readable registry](registry/resources.json) - 面向人和 AI 的结构化资源目录。
+- [Registry index](docs/registry-index.md) - 从机器 registry 生成的人类可读资源目录。
 
 ## 生态入口
 
@@ -94,8 +95,15 @@ Coding agents 的质量很大程度取决于它们能否安全地获取外部信
 
 - [Agent guide](AGENTS.md)
 - [Resource registry](registry/resources.json)
+- [Registry index](docs/registry-index.md)
 - [Resource schema](schemas/resource.schema.json)
 - [Registry validator](scripts/validate-registry.mjs)
+
+### 发布和传播
+
+- [Social preview guide](docs/social-preview.md)
+- [Social preview PNG](assets/social-preview.png)
+- [Launch checklist](docs/launch-checklist.md)
 
 ## 给 AI Agents
 

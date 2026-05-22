@@ -70,6 +70,18 @@
       "public": true
     },
     {
+      "id": "registry-index",
+      "title": "Registry index",
+      "type": "reference",
+      "ecosystem": "multi-agent",
+      "summary": "Human-readable resource index generated from the machine-readable registry.",
+      "language": "en",
+      "path": "docs/registry-index.md",
+      "tags": ["registry", "index", "generated"],
+      "maturity": "recommended",
+      "public": true
+    },
+    {
       "id": "i18n-policy",
       "title": "Internationalization policy",
       "type": "reference",
@@ -79,6 +91,42 @@
       "path": "docs/i18n.md",
       "tags": ["i18n", "translation", "governance"],
       "maturity": "recommended",
+      "public": true
+    },
+    {
+      "id": "social-preview-guide",
+      "title": "Social preview guide",
+      "type": "reference",
+      "ecosystem": "multi-agent",
+      "summary": "Setup notes for using the repository social preview artwork on GitHub.",
+      "language": "en",
+      "path": "docs/social-preview.md",
+      "tags": ["launch", "social-preview", "sharing"],
+      "maturity": "starter",
+      "public": true
+    },
+    {
+      "id": "social-preview-png",
+      "title": "Social preview PNG",
+      "type": "reference",
+      "ecosystem": "multi-agent",
+      "summary": "Public repository social preview image for link sharing and launch posts.",
+      "language": "en",
+      "path": "assets/social-preview.png",
+      "tags": ["launch", "social-preview", "image"],
+      "maturity": "starter",
+      "public": true
+    },
+    {
+      "id": "social-preview-svg",
+      "title": "Social preview SVG",
+      "type": "reference",
+      "ecosystem": "multi-agent",
+      "summary": "Editable source artwork for the repository social preview image.",
+      "language": "en",
+      "path": "assets/social-preview.svg",
+      "tags": ["launch", "social-preview", "source"],
+      "maturity": "starter",
       "public": true
     },
     {
@@ -116,6 +164,18 @@
       "path": "docs/zh-CN/best-practices.md",
       "tags": ["best-practice", "search", "privacy", "translation", "zh-cn"],
       "maturity": "starter",
+      "public": true
+    },
+    {
+      "id": "registry-index-generator",
+      "title": "Registry index generator",
+      "type": "tool",
+      "ecosystem": "multi-agent",
+      "summary": "Node.js script that generates the human-readable registry index from registry/resources.json.",
+      "language": "en",
+      "path": "scripts/generate-registry-index.mjs",
+      "tags": ["registry", "generator", "tool"],
+      "maturity": "recommended",
       "public": true
     },
     {
