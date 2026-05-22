@@ -43,6 +43,7 @@ Coding agents 的质量很大程度取决于它们能否安全地获取外部信
 - [Claude Code MCP guide](docs/integrations/claude-code-mcp.md) - 安全边界清晰的 MCP 搜索流程。
 - [SearXNG deployment hardening](docs/hardening/searxng-deployment.md) - 面向部署者的加固清单。
 - [SearXNG MCP research note](docs/research/searxng-claude-code-mcp.md) - 从本地研究脱敏整理出的公开笔记。
+- [Search backend comparison](docs/comparisons/search-backends.md) - SearXNG、公共实例、hosted API 和 direct search 的取舍。
 - [Machine-readable registry](registry/resources.json) - 面向人和 AI 的结构化资源目录。
 - [Registry index](docs/registry-index.md) - 从机器 registry 生成的人类可读资源目录。
 
@@ -83,6 +84,7 @@ Coding agents 的质量很大程度取决于它们能否安全地获取外部信
 
 - [Research note index](docs/research/README.md)
 - [SearXNG MCP integration for Claude Code](docs/research/searxng-claude-code-mcp.md)
+- [Search backend comparison](docs/comparisons/search-backends.md)
 - [Research report template](templates/research-report-template.md)
 
 ### 双语文档
@@ -103,6 +105,7 @@ Coding agents 的质量很大程度取决于它们能否安全地获取外部信
 
 - [Social preview guide](docs/social-preview.md)
 - [Social preview PNG](assets/social-preview.png)
+- [Launch post](docs/launch-post.md)
 - [Launch checklist](docs/launch-checklist.md)
 
 ## 给 AI Agents

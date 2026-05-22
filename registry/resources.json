@@ -130,6 +130,18 @@
       "public": true
     },
     {
+      "id": "launch-post",
+      "title": "Launch post",
+      "type": "reference",
+      "ecosystem": "multi-agent",
+      "summary": "Reusable English and Chinese launch copy for sharing the repository publicly.",
+      "language": "en",
+      "path": "docs/launch-post.md",
+      "tags": ["launch", "sharing", "bilingual"],
+      "maturity": "starter",
+      "public": true
+    },
+    {
       "id": "best-practices",
       "title": "Best practices",
       "type": "best-practice",
@@ -252,6 +264,18 @@
       "summary": "Evaluation dimensions for comparing agent search approaches.",
       "path": "docs/evaluation.md",
       "tags": ["evaluation", "research", "quality"],
+      "maturity": "starter",
+      "public": true
+    },
+    {
+      "id": "search-backend-comparison",
+      "title": "Search backend comparison",
+      "type": "research",
+      "ecosystem": "multi-agent",
+      "summary": "Comparison of SearXNG, public instances, hosted search APIs, and direct web search for coding agents.",
+      "language": "en",
+      "path": "docs/comparisons/search-backends.md",
+      "tags": ["comparison", "search", "searxng", "privacy"],
       "maturity": "starter",
       "public": true
     },

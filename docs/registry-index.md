@@ -32,6 +32,7 @@ make generate-registry-index
 | --- | --- | --- | --- | --- | --- |
 | [Evaluation](../docs/evaluation.md) | `research` | `multi-agent` | `starter` | `en` | Evaluation dimensions for comparing agent search approaches. |
 | [Research notes](../docs/research/README.md) | `research` | `multi-agent` | `starter` | `en` | Index of sanitized public research notes derived from experiments, comparisons, and integration studies. |
+| [Search backend comparison](../docs/comparisons/search-backends.md) | `research` | `multi-agent` | `starter` | `en` | Comparison of SearXNG, public instances, hosted search APIs, and direct web search for coding agents. |
 | [SearXNG MCP integration for Claude Code](../docs/research/searxng-claude-code-mcp.md) | `research` | `claude-code` | `starter` | `en` | Sanitized research note on using SearXNG through MCP for Claude Code and adjacent agent workflows. |
 
 ## References
@@ -46,6 +47,7 @@ make generate-registry-index
 | [Integration template](../templates/integration-template.md) | `reference` | `generic` | `starter` | `en` | Reusable template for public-safe search integration examples. |
 | [Known issues](../docs/known-issues.md) | `reference` | `multi-agent` | `recommended` | `en` | Known constraints and deliberate repository decisions. |
 | [Launch checklist](../docs/launch-checklist.md) | `reference` | `multi-agent` | `recommended` | `en` | Pre-launch checklist for metadata, content baseline, privacy review, AI readiness, and validation. |
+| [Launch post](../docs/launch-post.md) | `reference` | `multi-agent` | `starter` | `en` | Reusable English and Chinese launch copy for sharing the repository publicly. |
 | [License](../LICENSE) | `reference` | `multi-agent` | `recommended` | `en` | MIT license for repository content and supporting scripts. |
 | [Positioning and naming](../docs/positioning.md) | `reference` | `multi-agent` | `recommended` | `en` | Rationale for using an awesome-style name and maintenance model. |
 | [Registry index](../docs/registry-index.md) | `reference` | `multi-agent` | `recommended` | `en` | Human-readable resource index generated from the machine-readable registry. |

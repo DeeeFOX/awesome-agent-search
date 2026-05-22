@@ -29,6 +29,7 @@ Use this checklist before announcing the repository or asking agents to contribu
 - examples exist for Codex, Claude Code, OpenClaw, and generic agents
 - templates exist for integration examples and research reports
 - `registry/resources.json` indexes durable resources
+- `docs/launch-post.md` exists for public sharing
 
 ## Privacy Review
 

@@ -47,6 +47,7 @@ This repository collects practical patterns for using SearXNG as a privacy-aware
 - [Claude Code MCP guide](docs/integrations/claude-code-mcp.md) - explicit MCP search flow with safe boundaries.
 - [SearXNG deployment hardening](docs/hardening/searxng-deployment.md) - operator checklist for safer agent search.
 - [SearXNG MCP research note](docs/research/searxng-claude-code-mcp.md) - sanitized findings derived from local research.
+- [Search backend comparison](docs/comparisons/search-backends.md) - SearXNG, public instances, hosted APIs, and direct search tradeoffs.
 - [Machine-readable registry](registry/resources.json) - structured resource map for humans and AI agents.
 - [Chinese best practices](docs/zh-CN/best-practices.md) - Chinese translation of the core guide.
 - [Registry index](docs/registry-index.md) - human-readable view generated from the machine registry.
@@ -87,6 +88,7 @@ This repository collects practical patterns for using SearXNG as a privacy-aware
 
 - [Research note index](docs/research/README.md)
 - [SearXNG MCP integration for Claude Code](docs/research/searxng-claude-code-mcp.md)
+- [Search backend comparison](docs/comparisons/search-backends.md)
 - [Research report template](templates/research-report-template.md)
 
 ### Bilingual Docs
@@ -108,6 +110,7 @@ This repository collects practical patterns for using SearXNG as a privacy-aware
 
 - [Social preview guide](docs/social-preview.md)
 - [Social preview PNG](assets/social-preview.png)
+- [Launch post](docs/launch-post.md)
 - [Launch checklist](docs/launch-checklist.md)
 
 ## For AI Agents
