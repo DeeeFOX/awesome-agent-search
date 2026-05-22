@@ -41,13 +41,13 @@ Coding agents 的质量很大程度取决于它们能否安全地获取外部信
 - [中文最佳实践](docs/zh-CN/best-practices.md) - 查询设计、fallback、rate limit、日志和来源处理。
 - [Best practices](docs/best-practices.md) - 英文 canonical version。
 - [Claude Code MCP guide](docs/integrations/claude-code-mcp.md) - 安全边界清晰的 MCP 搜索流程。
-- [Claude Code self-bootstrap guide](docs/integrations/claude-code-self-bootstrap.md) - 面向 Claude Code 自读自装的 SearXNG MCP 搜索接入流程。
-- [Claude Code post-install lifecycle](docs/integrations/claude-code-post-install-lifecycle.md) - 安装后的重启、第二客户端、跨目录和 scope 行为。
+- [Claude Code bootstrap requirements](docs/integrations/claude-code-bootstrap-requirements.md) - 安全 Claude Code starter 应满足的要求。
+- [oh-my-agent-search](https://github.com/DeeeFOX/oh-my-agent-search) - 可安装 companion，负责可运行设置、检查和生命周期文档。
 - [SearXNG deployment hardening](docs/hardening/searxng-deployment.md) - 面向部署者的加固清单。
 - [SearXNG MCP research note](docs/research/searxng-claude-code-mcp.md) - 从本地研究脱敏整理出的公开笔记。
 - [Search backend comparison](docs/comparisons/search-backends.md) - SearXNG、公共实例、hosted API 和 direct search 的取舍。
-- [MCP SearXNG server comparison](docs/comparisons/mcp-searxng-servers.md) - 面向 Claude Code 和未来安装型 starter 的 adapter 对比。
-- [Companion repository plan](docs/companion-repository.md) - 当前 awesome 仓库和未来 `oh-my-agent-search` starter 的边界。
+- [MCP SearXNG server comparison](docs/comparisons/mcp-searxng-servers.md) - 面向 Claude Code 和安装型 starter 的 adapter 对比。
+- [Companion repository boundary](docs/companion-repository.md) - 当前 awesome 仓库和 `oh-my-agent-search` 的边界。
 - [Machine-readable registry](registry/resources.json) - 面向人和 AI 的结构化资源目录。
 - [Registry index](docs/registry-index.md) - 从机器 registry 生成的人类可读资源目录。
 
@@ -73,8 +73,7 @@ Coding agents 的质量很大程度取决于它们能否安全地获取外部信
 
 - [Integration guide index](docs/integrations/README.md)
 - [Claude Code MCP guide](docs/integrations/claude-code-mcp.md)
-- [Claude Code self-bootstrap guide](docs/integrations/claude-code-self-bootstrap.md)
-- [Claude Code post-install lifecycle](docs/integrations/claude-code-post-install-lifecycle.md)
+- [Claude Code bootstrap requirements](docs/integrations/claude-code-bootstrap-requirements.md)
 - [Codex example](examples/codex/README.md)
 - [Claude Code example](examples/claude-code/README.md)
 - [OpenClaw example](examples/openclaw/README.md)
@@ -88,7 +87,7 @@ Coding agents 的质量很大程度取决于它们能否安全地获取外部信
 
 ### 研究和评估
 
-- [Companion repository plan](docs/companion-repository.md)
+- [Companion repository boundary](docs/companion-repository.md)
 - [Research note index](docs/research/README.md)
 - [SearXNG MCP integration for Claude Code](docs/research/searxng-claude-code-mcp.md)
 - [Search backend comparison](docs/comparisons/search-backends.md)
@@ -126,7 +125,7 @@ AI agents 应该：
 2. 读取 [registry/resources.json](registry/resources.json)。
 3. 选择最接近的 guide、example 或 template。
 4. 保持 query、endpoint、path 和 example 公开安全。
-5. Claude Code 接入完成后，使用 [post-install lifecycle](docs/integrations/claude-code-post-install-lifecycle.md) 验证 scope、重启和跨目录行为。
+5. 可运行安装命令应放在安装型 companion，而不是放在这个 awesome list。
 6. 提交前运行 `make review`。
 
 长期可用资源必须写入 `registry/resources.json`。翻译资源应使用 `language` 和 `translationOf` 元数据。
@@ -135,7 +134,7 @@ AI agents 应该：
 
 这个仓库叫 `awesome-agent-search`，因为它是精选最佳实践和集成 hub。
 
-`oh-my-*` 更像安装包、插件框架或一键增强工具。如果后续要提供可安装默认配置，应拆成独立 companion project，例如 `agent-search-starter`。
+`oh-my-*` 更像安装包、插件框架或一键增强工具。可运行设置应放在独立 companion：[oh-my-agent-search](https://github.com/DeeeFOX/oh-my-agent-search)。
 
 ## 参考项目
 

@@ -1,16 +1,10 @@
-# Companion Repository Plan
+# Companion Repository Boundary
 
 ## Recommendation
 
 Keep this repository as `awesome-agent-search`.
 
-Create a separate installable companion only after the Claude Code bootstrap path is verified end to end.
-
-Recommended companion name:
-
-```text
-oh-my-agent-search
-```
+Use [oh-my-agent-search](https://github.com/DeeeFOX/oh-my-agent-search) as the installable companion for runnable Claude Code setup, local SearXNG bootstrapping, post-install checks, and uninstall flow.
 
 ## Why Split The Repositories
 
@@ -24,7 +18,7 @@ oh-my-agent-search
 - machine-readable registry
 - contribution governance
 
-`oh-my-agent-search` should be an installable starter:
+`oh-my-agent-search` is the installable starter:
 
 - pinned MCP adapter choices
 - dry-run install scripts
@@ -34,7 +28,7 @@ oh-my-agent-search
 - reusable instruction templates
 - minimal examples that actually run
 
-Combining both scopes too early would make the repository harder to trust. Curated guidance changes slowly; installation scripts need tighter versioning, smoke tests, and failure handling.
+Combining both scopes makes the repository harder to trust. Curated guidance changes slowly; installation scripts need tighter versioning, smoke tests, and failure handling.
 
 ## Use The Research Report As Seed Material
 
@@ -52,9 +46,9 @@ Use it as seed material for:
 
 Every extracted claim should be rewritten as public-safe, dated, and verifiable guidance.
 
-## Creation Criteria
+## Companion Readiness Criteria
 
-Create `oh-my-agent-search` when these conditions are true:
+Keep `oh-my-agent-search` listed as the installable companion only while these conditions remain true:
 
 - one MCP adapter has been selected as the initial default
 - Claude Code setup has been verified with a trusted SearXNG endpoint
@@ -64,7 +58,7 @@ Create `oh-my-agent-search` when these conditions are true:
 - installer defaults to dry-run or explicit confirmation
 - no private endpoints, credentials, local absolute paths, or account identifiers appear in examples
 
-## Minimal First Release
+## Starter Shape
 
 ```text
 oh-my-agent-search/
@@ -84,7 +78,7 @@ oh-my-agent-search/
     install-claude-code.mjs
 ```
 
-First release scope:
+Starter scope:
 
 - Claude Code only
 - SearXNG only
@@ -103,12 +97,10 @@ Avoid promising universal agent search until Codex, OpenClaw, and generic agent 
 
 ## Cross-Linking
 
-When the companion exists:
-
 - this repository should list it as an installable starter
 - the companion should link back to this repository for research, comparisons, and privacy rules
 - both repositories should share compatible `AGENTS.md` safety language
-- registry entries should mark the companion as an external resource
+- this repository should avoid duplicating the companion's runnable commands
 
 ## Maintenance Rule
 

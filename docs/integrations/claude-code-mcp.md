@@ -91,14 +91,9 @@ Do not present the fallback as equivalent to MCP. It is more portable, but weake
 - Treat regional availability and latency claims as dated observations unless revalidated.
 - If a search engine is unavailable in a deployment region, select lawful reachable engines for that region; do not publish bypass instructions, proxy details, or evasion steps.
 
-## Post-Install Lifecycle
+## Installable Companion
 
-After installation, search availability depends on two separate layers:
-
-- Claude Code still has an active MCP configuration in the current `local`, `user`, or `project` scope.
-- The configured SearXNG endpoint or local service is still reachable.
-
-For restart, second-client, and cross-folder behavior, see [Claude Code post-install lifecycle](claude-code-post-install-lifecycle.md).
+This repository defines the pattern and acceptance criteria. Runnable install commands, local SearXNG setup, lifecycle checks, and uninstall steps belong in [oh-my-agent-search](https://github.com/DeeeFOX/oh-my-agent-search).
 
 ## Acceptance Criteria
 

@@ -50,9 +50,9 @@ Use these docs to define requirements and compare candidates, but do not make a 
 - one negative test for private-context leakage
 - a URL-reading risk review when the adapter exposes page fetch tools
 
-## Candidate Default For An Installable Companion
+## Companion Starter Default
 
-For a future `oh-my-agent-search` repository, the first candidate to verify is `ihor-sokoliuk/mcp-searxng`.
+For [oh-my-agent-search](https://github.com/DeeeFOX/oh-my-agent-search), the first candidate to verify is `ihor-sokoliuk/mcp-searxng`.
 
 Reasoning:
 

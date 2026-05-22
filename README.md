@@ -45,13 +45,13 @@ This repository collects practical patterns for using SearXNG as a privacy-aware
 
 - [Best practices](docs/best-practices.md) - query design, fallback, rate limits, logging, and source handling.
 - [Claude Code MCP guide](docs/integrations/claude-code-mcp.md) - explicit MCP search flow with safe boundaries.
-- [Claude Code self-bootstrap guide](docs/integrations/claude-code-self-bootstrap.md) - Claude Code-readable steps for adding and verifying SearXNG MCP search.
-- [Claude Code post-install lifecycle](docs/integrations/claude-code-post-install-lifecycle.md) - restart, second-client, cross-folder, and scope behavior after setup.
+- [Claude Code bootstrap requirements](docs/integrations/claude-code-bootstrap-requirements.md) - requirements that a safe Claude Code starter must satisfy.
+- [oh-my-agent-search](https://github.com/DeeeFOX/oh-my-agent-search) - installable companion for runnable Claude Code setup, checks, and lifecycle docs.
 - [SearXNG deployment hardening](docs/hardening/searxng-deployment.md) - operator checklist for safer agent search.
 - [SearXNG MCP research note](docs/research/searxng-claude-code-mcp.md) - sanitized findings derived from local research.
 - [Search backend comparison](docs/comparisons/search-backends.md) - SearXNG, public instances, hosted APIs, and direct search tradeoffs.
-- [MCP SearXNG server comparison](docs/comparisons/mcp-searxng-servers.md) - adapter matrix for Claude Code and future installable starters.
-- [Companion repository plan](docs/companion-repository.md) - boundary between this awesome list and a future `oh-my-agent-search` starter.
+- [MCP SearXNG server comparison](docs/comparisons/mcp-searxng-servers.md) - adapter matrix for Claude Code and installable starters.
+- [Companion repository boundary](docs/companion-repository.md) - boundary between this awesome list and `oh-my-agent-search`.
 - [Machine-readable registry](registry/resources.json) - structured resource map for humans and AI agents.
 - [Chinese best practices](docs/zh-CN/best-practices.md) - Chinese translation of the core guide.
 - [Registry index](docs/registry-index.md) - human-readable view generated from the machine registry.
@@ -77,8 +77,7 @@ This repository collects practical patterns for using SearXNG as a privacy-aware
 
 - [Integration guide index](docs/integrations/README.md)
 - [Claude Code MCP guide](docs/integrations/claude-code-mcp.md)
-- [Claude Code self-bootstrap guide](docs/integrations/claude-code-self-bootstrap.md)
-- [Claude Code post-install lifecycle](docs/integrations/claude-code-post-install-lifecycle.md)
+- [Claude Code bootstrap requirements](docs/integrations/claude-code-bootstrap-requirements.md)
 - [Codex example](examples/codex/README.md)
 - [Claude Code example](examples/claude-code/README.md)
 - [OpenClaw example](examples/openclaw/README.md)
@@ -92,7 +91,7 @@ This repository collects practical patterns for using SearXNG as a privacy-aware
 
 ### Research And Evaluation
 
-- [Companion repository plan](docs/companion-repository.md)
+- [Companion repository boundary](docs/companion-repository.md)
 - [Research note index](docs/research/README.md)
 - [SearXNG MCP integration for Claude Code](docs/research/searxng-claude-code-mcp.md)
 - [Search backend comparison](docs/comparisons/search-backends.md)
@@ -131,7 +130,7 @@ AI agents should:
 2. Read [registry/resources.json](registry/resources.json).
 3. Pick the closest guide, example, or template.
 4. Keep every query, endpoint, path, and example public-safe.
-5. After Claude Code setup, use [post-install lifecycle](docs/integrations/claude-code-post-install-lifecycle.md) to verify scope, restart, and cross-folder behavior.
+5. Keep runnable install commands in the installable companion, not in this awesome list.
 6. Run `make review` before submitting changes.
 
 Durable resources must be registered in `registry/resources.json`. Translations should use `language` and `translationOf` metadata.
@@ -140,9 +139,9 @@ Durable resources must be registered in `registry/resources.json`. Translations 
 
 Use `awesome-agent-search` for this repository because it is a curated best-practices and integration hub.
 
-An `oh-my-*` name would imply an installable package, plugin framework, or one-command enhancement bundle. If this project later ships installable defaults, that should be a separate companion project such as `agent-search-starter`.
+An `oh-my-*` name implies an installable package, plugin framework, or one-command enhancement bundle. Runnable setup belongs in the separate [oh-my-agent-search](https://github.com/DeeeFOX/oh-my-agent-search) companion.
 
-See [Companion repository plan](docs/companion-repository.md) for the proposed `oh-my-agent-search` boundary.
+See [Companion repository boundary](docs/companion-repository.md) for the split between curated guidance and runnable setup.
 
 ## Inspired By
 
