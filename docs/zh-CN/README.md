@@ -8,6 +8,7 @@
 
 - [中文搜索发现](discovery.md)
 - [最佳实践](best-practices.md)
+- [搜索能力接入方案对比](search-integration-strategies.md)
 - [搜索后端对比](search-backends.md)
 - [MCP SearXNG server 对比](mcp-searxng-servers.md)
 - [Claude Code MCP 指南](claude-code-mcp.md)
@@ -16,10 +17,12 @@
 - [SearXNG MCP 与 Claude Code 集成研究](searxng-claude-code-mcp.md)
 - [仓库曝光清单](visibility-checklist.md)
 - [v0.1.0 Release Notes](release-v0.1.0.md)
+- [对比调研 Issue Backlog](comparison-issues.md)
 
 ## 相关英文文档
 
 - [Best practices](../best-practices.md)
+- [Search integration strategies](../comparisons/search-integration-strategies.md)
 - [Search backend comparison](../comparisons/search-backends.md)
 - [MCP SearXNG server comparison](../comparisons/mcp-searxng-servers.md)
 - [Claude Code bootstrap requirements](../integrations/claude-code-bootstrap-requirements.md)

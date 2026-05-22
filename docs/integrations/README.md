@@ -1,6 +1,6 @@
 # Integration Guides
 
-This directory contains public-safe integration guides for connecting coding agents to SearXNG-backed search.
+This directory contains public-safe integration guides for connecting coding agents to search tools, backends, and adapters.
 
 ## Rules
 
@@ -8,6 +8,7 @@ This directory contains public-safe integration guides for connecting coding age
 - Use placeholders such as `https://search.example.org`.
 - Do not publish private endpoints, credentials, proxy hosts, local paths, or account identifiers.
 - Prefer explicit search flows over prompt-only behavior.
+- Treat SearXNG as one supported backend, not the only integration route.
 - Add durable guides to `registry/resources.json`.
 
 ## Current Guides

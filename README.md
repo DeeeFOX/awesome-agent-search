@@ -4,12 +4,12 @@ English | [中文](README.zh-CN.md)
 
 [![Registry](https://img.shields.io/github/actions/workflow/status/DeeeFOX/awesome-agent-search/validate-registry.yml?branch=main&label=registry)](https://github.com/DeeeFOX/awesome-agent-search/actions/workflows/validate-registry.yml)
 ![Scope](https://img.shields.io/badge/focus-agent%20search-0b7285)
-![Engine](https://img.shields.io/badge/powered%20by-SearXNG-5c940d)
+![Methods](https://img.shields.io/badge/methods-multi--backend-5c940d)
 ![Style](https://img.shields.io/badge/style-awesome--list-7950f2)
 
-> SearXNG-powered search best practices for Codex, Claude Code, OpenClaw, and other coding agents.
+> Research and best practices for bringing web search into Codex, Claude Code, OpenClaw, and other coding agents.
 
-A curated, public-safe, AI-readable guide to better coding-agent search: query design, SearXNG integration, MCP patterns, deployment hardening, evaluation, and research notes.
+A curated, public-safe, AI-readable guide to better coding-agent search: native web search, MCP search adapters, SearXNG, hosted search APIs, browser-based retrieval, query design, hardening, evaluation, and research notes.
 
 ## Contents
 
@@ -26,9 +26,9 @@ A curated, public-safe, AI-readable guide to better coding-agent search: query d
 
 ## Why This Exists
 
-Coding agents are only as good as the information they can safely retrieve. Search becomes risky when agents send private context to the web, trust weak sources, over-query public instances, or hide retrieval inside broad prompts.
+Coding agents are only as good as the information they can safely retrieve. Search becomes risky when agents send private context to the web, trust weak sources, over-query external services, or hide retrieval inside broad prompts.
 
-This repository collects practical patterns for using SearXNG as a privacy-aware search layer for coding agents.
+This repository compares practical ways to bring search into agents. SearXNG is an important privacy-aware option, but it is one strategy among native agent search, MCP-based search adapters, hosted search APIs, browser-based retrieval, and local documentation search.
 
 ## Start Here
 
@@ -37,21 +37,23 @@ This repository collects practical patterns for using SearXNG as a privacy-aware
 | Humans | [Best practices](docs/best-practices.md) | Learn privacy-aware agent search patterns. |
 | Chinese readers | [中文 README](README.zh-CN.md) | Read the Chinese entry point and translated core docs. |
 | AI agents | [AGENTS.md](AGENTS.md) | Follow editing, validation, and privacy rules. |
-| Integrators | [Integration guides](docs/integrations/README.md) | Connect agents to SearXNG-backed search. |
-| Operators | [Deployment hardening](docs/hardening/searxng-deployment.md) | Harden SearXNG for agent workflows. |
+| Integrators | [Integration guides](docs/integrations/README.md) | Connect agents to search tools, backends, and adapters. |
+| Operators | [Deployment hardening](docs/hardening/searxng-deployment.md) | Harden self-hosted or managed search services for agent workflows. |
 | Researchers | [Research notes](docs/research/README.md) | Read and contribute public-safe findings. |
 | Maintainers | [Submission guide](docs/submission-guide.md) | Review issues, PRs, and registry entries. |
 
 ## Featured Resources
 
 - [Best practices](docs/best-practices.md) - query design, fallback, rate limits, logging, and source handling.
+- [Search integration strategies](docs/comparisons/search-integration-strategies.md) - native search, MCP, SearXNG, hosted APIs, browser retrieval, and hybrid routing.
 - [Claude Code MCP guide](docs/integrations/claude-code-mcp.md) - explicit MCP search flow with safe boundaries.
 - [Claude Code bootstrap requirements](docs/integrations/claude-code-bootstrap-requirements.md) - requirements that a safe Claude Code starter must satisfy.
 - [oh-my-agent-search](https://github.com/DeeeFOX/oh-my-agent-search) - installable companion for runnable Claude Code setup, checks, and lifecycle docs.
 - [SearXNG deployment hardening](docs/hardening/searxng-deployment.md) - operator checklist for safer agent search.
 - [SearXNG MCP research note](docs/research/searxng-claude-code-mcp.md) - sanitized findings derived from local research.
-- [Search backend comparison](docs/comparisons/search-backends.md) - SearXNG, public instances, hosted APIs, and direct search tradeoffs.
+- [Search backend comparison](docs/comparisons/search-backends.md) - native search, SearXNG, hosted APIs, browser retrieval, and direct search tradeoffs.
 - [MCP SearXNG server comparison](docs/comparisons/mcp-searxng-servers.md) - adapter matrix for Claude Code and installable starters.
+- [Comparison issue backlog](docs/roadmap/comparison-issues.md) - issue-ready research tasks for expanding backend and integration coverage.
 - [Companion repository boundary](docs/companion-repository.md) - boundary between this awesome list and `oh-my-agent-search`.
 - [Machine-readable registry](registry/resources.json) - structured resource map for humans and AI agents.
 - [Chinese best practices](docs/zh-CN/best-practices.md) - Chinese translation of the core guide.
@@ -101,8 +103,10 @@ For runnable setup, use [oh-my-agent-search](https://github.com/DeeeFOX/oh-my-ag
 - [Companion repository boundary](docs/companion-repository.md)
 - [Research note index](docs/research/README.md)
 - [SearXNG MCP integration for Claude Code](docs/research/searxng-claude-code-mcp.md)
+- [Search integration strategies](docs/comparisons/search-integration-strategies.md)
 - [Search backend comparison](docs/comparisons/search-backends.md)
 - [MCP SearXNG server comparison](docs/comparisons/mcp-searxng-servers.md)
+- [Comparison issue backlog](docs/roadmap/comparison-issues.md)
 - [Research report template](templates/research-report-template.md)
 
 ### Bilingual Docs
@@ -111,11 +115,13 @@ For runnable setup, use [oh-my-agent-search](https://github.com/DeeeFOX/oh-my-ag
 - [Chinese docs index](docs/zh-CN/README.md)
 - [Chinese discovery keywords](docs/zh-CN/discovery.md)
 - [Chinese best practices](docs/zh-CN/best-practices.md)
+- [Chinese search integration strategies](docs/zh-CN/search-integration-strategies.md)
 - [Chinese search backend comparison](docs/zh-CN/search-backends.md)
 - [Chinese MCP SearXNG server comparison](docs/zh-CN/mcp-searxng-servers.md)
 - [Chinese Claude Code MCP guide](docs/zh-CN/claude-code-mcp.md)
 - [Chinese SearXNG deployment hardening](docs/zh-CN/searxng-deployment-hardening.md)
 - [Chinese SearXNG Claude Code MCP research note](docs/zh-CN/searxng-claude-code-mcp.md)
+- [Chinese comparison issue backlog](docs/zh-CN/comparison-issues.md)
 - [Internationalization policy](docs/i18n.md)
 
 ### Machine-Readable Layer

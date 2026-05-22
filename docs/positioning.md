@@ -2,7 +2,7 @@
 
 ## Problem
 
-Public search-curation repositories need a name that is searchable, durable, and honest about scope. This project is a curated playbook, not an installable bundle.
+Public search-curation repositories need a name that is searchable, durable, and honest about scope. This project is a curated research and best-practices hub, not an installable bundle and not a single-backend catalog.
 
 ## Positioning
 
@@ -10,10 +10,13 @@ Use `awesome-agent-search` as the canonical public name for this repository.
 
 Use an `oh-my-*` name only for a separate companion repository that ships installable defaults, wrappers, or automation.
 
+Scope the repository around the problem of bringing search into coding agents. SearXNG remains a priority option because it is privacy-aware and operator-controlled, but the repository should also compare native agent search, MCP adapters, hosted search APIs, browser-based retrieval, and local/private documentation search.
+
 ## Why This Name
 
 - `awesome-*` signals a curated list or pattern library.
 - `agent-search` keeps the focus broad enough for Codex, Claude Code, OpenClaw, and future agent runtimes.
+- The name does not bind the project to SearXNG, Brave Search, Tavily, browser tooling, or any single vendor path.
 - A single ecosystem name in the title makes the project feel narrower than it is.
 - Searchability comes from the topic set, README copy, examples, and registry entries, not from stuffing names into the repo title.
 

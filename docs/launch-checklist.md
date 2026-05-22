@@ -11,12 +11,12 @@ Use this checklist before announcing the repository or asking agents to contribu
 ## Repository Metadata
 
 - repository name is `awesome-agent-search`
-- description mentions SearXNG, coding agents, Codex, Claude Code, and OpenClaw
+- description mentions web search, coding agents, Codex, Claude Code, and OpenClaw
 - topics include `awesome-list`, `agents`, `coding-agents`, `searxng`, `codex`, `claude-code`, `openclaw`, `search`, `privacy`, and `agent-tools`
 - README first screen explains the audience and entry points
 - license is present
 - social preview is configured with `assets/social-preview.png`
-- first release plan is ready for `v0.1.0`
+- release plan reflects the current multi-backend search-integration scope
 - release notes draft exists at `docs/release-notes/v0.1.0.md`
 - [Repository visibility checklist](visibility-checklist.md) is reviewed before public launch
 

@@ -8,13 +8,17 @@ Some high-value integration details cannot be published safely if they depend on
 
 ### Search quality is environment-sensitive
 
-Instance quality, ranking behavior, and rate limits vary by deployment and usage pattern.
+Search quality, ranking behavior, rate limits, and availability vary by backend, runtime, deployment, account settings, region, and usage pattern.
 
 ## Deliberate Decisions
 
 ### The registry is the canonical machine-readable index
 
 Agents should treat `registry/resources.json` as the primary structured map of repository resources.
+
+### SearXNG is a baseline, not the whole scope
+
+SearXNG remains a priority baseline because it is public, self-hostable, and operator-controlled. The repository should still compare native search, MCP adapters, hosted APIs, browser retrieval, and local documentation search.
 
 ### Extra private term lists stay local
 

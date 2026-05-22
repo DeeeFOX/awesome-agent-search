@@ -22,7 +22,7 @@ Set the repository metadata from the GitHub repository page.
 Recommended description:
 
 ```text
-SearXNG-powered search best practices for Codex, Claude Code, OpenClaw, and AI coding agents.
+Research and best practices for bringing web search into Codex, Claude Code, OpenClaw, and AI coding agents.
 ```
 
 Recommended website:
@@ -60,12 +60,21 @@ developer-tools
 
 GitHub currently allows up to 20 topics. Keep topic names lowercase, use hyphens, and avoid private or organization-specific terms.
 
+Topic audit reminder:
+
+- prefer exact high-intent topics such as `searxng`, `mcp`, `model-context-protocol`, `claude-code`, `codex`, `openclaw`, and `privacy`
+- avoid replacing exact ecosystem terms with near-synonyms such as `*-skill`, `*-engine`, or singular/plural variants unless those are deliberately targeted
+- re-check topics after every major positioning change or public launch post
+
 ## Search Surface
 
 GitHub repository search can target name, description, topics, and README content. This means the first screen of the README should naturally contain the core terms:
 
 - `awesome-agent-search`
 - `SearXNG`
+- `MCP search`
+- `Brave Search API`
+- `Tavily`
 - `Codex`
 - `Claude Code`
 - `OpenClaw`
@@ -123,18 +132,18 @@ Keep the image focused on public repository identity. Do not include personal em
 
 ## Release Strategy
 
-Create a first GitHub release after the content baseline passes validation.
+Create a GitHub release after the content baseline passes validation.
 
-Recommended tag:
+For the next broad-scope positioning release, use:
 
 ```text
-v0.1.0
+v0.2.0
 ```
 
 Recommended title:
 
 ```text
-v0.1.0 - SearXNG search best practices for coding agents
+v0.2.0 - Search integration research for coding agents
 ```
 
 Release notes should summarize:
@@ -205,6 +214,6 @@ Recommended signals:
 - repository metadata matches the recommended positioning
 - README first screen contains the core discovery terms naturally
 - social preview is configured
-- v0.1.0 release exists after validation passes
+- latest release reflects the current multi-backend search-integration scope
 - launch post avoids private environment details
 - durable visibility docs are indexed in `registry/resources.json`

@@ -2,7 +2,9 @@
 
 ## Mission
 
-Improve coding-agent search quality with public-safe, privacy-aware SearXNG practices.
+Improve coding-agent search quality with public-safe, privacy-aware search integration practices.
+
+SearXNG is a priority research path, not the only supported approach. Contributions may compare native agent search, MCP search adapters, self-hosted search, hosted search APIs, browser-based retrieval, and local documentation search.
 
 ## Allowed Contributions
 

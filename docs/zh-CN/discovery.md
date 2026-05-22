@@ -6,9 +6,9 @@
 
 ## 一句话定位
 
-`awesome-agent-search` 是一个面向 Codex、Claude Code、OpenClaw 和其他 coding agents 的 SearXNG 联网搜索最佳实践、对比调研和集成入口仓库。
+`awesome-agent-search` 是一个面向 Codex、Claude Code、OpenClaw 和其他 coding agents 的搜索能力接入最佳实践、对比调研和集成入口仓库。
 
-可运行安装、Claude Code MCP 接入、本地 SearXNG 启动和安装后自测，请使用安装型 companion：[oh-my-agent-search](https://github.com/DeeeFOX/oh-my-agent-search)。
+SearXNG 是本仓库重点研究方案之一，但不是唯一方案。可运行安装、Claude Code MCP 接入、本地 SearXNG 启动和安装后自测，请使用安装型 companion：[oh-my-agent-search](https://github.com/DeeeFOX/oh-my-agent-search)。
 
 ## 中文关键词
 
@@ -16,6 +16,11 @@
 
 - SearXNG 联网搜索
 - SearXNG MCP
+- Brave Search API
+- Tavily 搜索
+- 浏览器检索
+- 原生联网搜索
+- provider-managed web search
 - Claude Code 联网搜索
 - Claude Code MCP 搜索
 - Claude Code SearXNG
@@ -41,6 +46,7 @@
 | --- | --- | --- |
 | 理解整体定位 | [中文 README](../../README.zh-CN.md) | [README](../../README.md) |
 | 学习核心原则 | [最佳实践](best-practices.md) | [Best practices](../best-practices.md) |
+| 比较搜索接入策略 | [搜索能力接入方案对比](search-integration-strategies.md) | [Search integration strategies](../comparisons/search-integration-strategies.md) |
 | 比较搜索后端 | [搜索后端对比](search-backends.md) | [Search backend comparison](../comparisons/search-backends.md) |
 | 比较 MCP adapter | [MCP SearXNG server 对比](mcp-searxng-servers.md) | [MCP SearXNG server comparison](../comparisons/mcp-searxng-servers.md) |
 | 了解 Claude Code 模式 | 暂无全文翻译 | [Claude Code MCP guide](../integrations/claude-code-mcp.md) |
@@ -51,7 +57,8 @@
 
 ### 对比调研
 
-- [搜索后端对比](search-backends.md)：比较自托管 SearXNG、可信托管 SearXNG、公共 SearXNG 实例、hosted AI search API 和 direct web search。
+- [搜索能力接入方案对比](search-integration-strategies.md)：比较原生搜索、MCP、SearXNG、hosted APIs、浏览器检索、本地文档搜索和混合路由。
+- [搜索后端对比](search-backends.md)：比较原生搜索、自托管 SearXNG、可信托管 SearXNG、公共 SearXNG 实例、hosted search API、浏览器检索和 direct web search。
 - [MCP SearXNG server 对比](mcp-searxng-servers.md)：比较公开 MCP-to-SearXNG bridge 项目的 runtime、transport、配置方式、适配性和风险。
 
 ### Claude Code

@@ -1,6 +1,6 @@
 # v0.1.0 Release Notes
 
-标题：
+历史标题：
 
 ```text
 v0.1.0 - SearXNG search best practices for coding agents
@@ -8,15 +8,16 @@ v0.1.0 - SearXNG search best practices for coding agents
 
 ## 概要
 
-Awesome Agent Search 是一个用 SearXNG 提升 coding-agent 搜索质量的精选、AI 可读指南。
+Awesome Agent Search 是一个提升 coding-agent 搜索质量的精选、AI 可读指南。
 
-这个首版 release 将仓库定位为面向 Codex、Claude Code、OpenClaw 和其他 coding agents 的 `awesome-*` 风格知识库。内容重点包括公开安全研究、最佳实践、集成要求、部署加固、评估方法和双语发现。
+这个首版 release 将仓库定位为面向 Codex、Claude Code、OpenClaw 和其他 coding agents 的 `awesome-*` 风格知识库。仓库从 SearXNG-focused research 起步，现在将 SearXNG 视为重要路径之一，同时覆盖原生搜索、MCP adapters、hosted search APIs、浏览器检索和本地文档搜索。
 
 可运行安装流程放在 companion 仓库：[oh-my-agent-search](https://github.com/DeeeFOX/oh-my-agent-search)。
 
 ## 包含内容
 
 - 隐私友好 agent 搜索核心最佳实践。
+- 原生搜索、MCP、SearXNG、hosted APIs、浏览器检索和本地文档搜索的接入策略对比。
 - Codex、Claude Code、OpenClaw 和通用 agents 的生态入口。
 - Claude Code MCP 指南和 bootstrap 要求。
 - SearXNG 部署加固清单。

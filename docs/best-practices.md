@@ -2,7 +2,7 @@
 
 ## Problem
 
-Coding agents often search too broadly, trust weak sources, leak environment details, or hide search behavior inside opaque prompts. SearXNG can improve search quality when it is used through explicit, privacy-aware, reviewable patterns.
+Coding agents often search too broadly, trust weak sources, leak environment details, or hide search behavior inside opaque prompts. Search quality improves when retrieval is explicit, privacy-aware, reviewable, and matched to the task instead of being tied to a single backend.
 
 ## Core Principles
 
@@ -30,9 +30,9 @@ Avoid search when:
 - the agent can solve the task with existing repository context
 - the search result would be used without verification
 
-## SearXNG Instance Selection
+## Search Backend Selection
 
-Use an instance only when it fits the trust model for the task.
+Use a backend only when it fits the trust model for the task. The backend may be native agent search, an MCP adapter, a self-hosted SearXNG instance, a hosted search API, a browser-based retriever, or a local documentation index.
 
 Recommended checks:
 
@@ -43,7 +43,7 @@ Recommended checks:
 - logging and privacy behavior are acceptable
 - fallback behavior is documented
 
-Do not publish private instance URLs in this repository. Use placeholders such as `https://search.example.org` in public examples.
+Do not publish private instance URLs, API keys, browser profiles, or account-specific settings in this repository. Use placeholders such as `https://search.example.org` in public examples.
 
 ## Query Design
 
@@ -82,7 +82,7 @@ Recommended order:
 
 1. local repository files
 2. official documentation or primary sources
-3. SearXNG web results
+3. the approved external search backend
 4. secondary sources with clear uncertainty
 5. issue-first proposal when behavior is still under investigation
 

@@ -38,8 +38,10 @@ make generate-registry-index
 | [MCP SearXNG server comparison](../docs/comparisons/mcp-searxng-servers.md) | `research` | `claude-code` | `experimental` | `en` | Adapter matrix for SearXNG MCP bridge projects and Claude Code bootstrap readiness. |
 | [MCP SearXNG server 对比](../docs/zh-CN/mcp-searxng-servers.md) | `research` | `claude-code` | `experimental` | `zh-CN` -> `mcp-searxng-server-comparison` | 面向 Claude Code 和安装型 starter 的 MCP-to-SearXNG bridge 对比中文翻译。 |
 | [Research notes](../docs/research/README.md) | `research` | `multi-agent` | `starter` | `en` | Index of sanitized public research notes derived from experiments, comparisons, and integration studies. |
-| [Search backend comparison](../docs/comparisons/search-backends.md) | `research` | `multi-agent` | `starter` | `en` | Comparison of SearXNG, public instances, hosted search APIs, and direct web search for coding agents. |
-| [搜索后端对比](../docs/zh-CN/search-backends.md) | `research` | `multi-agent` | `starter` | `zh-CN` -> `search-backend-comparison` | SearXNG、公共实例、hosted API 和 direct search 取舍的中文对照翻译。 |
+| [Search backend comparison](../docs/comparisons/search-backends.md) | `research` | `multi-agent` | `starter` | `en` | Comparison of native search, SearXNG, hosted search APIs, browser retrieval, and direct web search for coding agents. |
+| [搜索后端对比](../docs/zh-CN/search-backends.md) | `research` | `multi-agent` | `starter` | `zh-CN` -> `search-backend-comparison` | 原生搜索、SearXNG、hosted API、浏览器检索和 direct search 取舍的中文对照翻译。 |
+| [Search integration strategies](../docs/comparisons/search-integration-strategies.md) | `research` | `multi-agent` | `starter` | `en` | Strategy comparison for bringing search into coding agents through native search, MCP, SearXNG, hosted APIs, browser retrieval, local docs, and hybrid routing. |
+| [搜索能力接入方案对比](../docs/zh-CN/search-integration-strategies.md) | `research` | `multi-agent` | `starter` | `zh-CN` -> `search-integration-strategies` | 原生搜索、MCP、SearXNG、hosted APIs、浏览器检索、本地文档和混合路由的搜索接入策略中文对照。 |
 | [SearXNG MCP integration for Claude Code](../docs/research/searxng-claude-code-mcp.md) | `research` | `claude-code` | `starter` | `en` | Sanitized research note on using SearXNG through MCP for Claude Code and adjacent agent workflows. |
 | [SearXNG MCP 与 Claude Code 集成研究](../docs/zh-CN/searxng-claude-code-mcp.md) | `research` | `claude-code` | `starter` | `zh-CN` -> `searxng-claude-code-mcp-research` | SearXNG 通过 MCP 用于 Claude Code 和相邻 agent workflows 的中文研究笔记。 |
 
@@ -50,9 +52,11 @@ make generate-registry-index
 | [Agent guide](../AGENTS.md) | `reference` | `multi-agent` | `recommended` | `en` | Repository-level operating rules for autonomous agent contributors. |
 | [Architecture](../docs/architecture.md) | `reference` | `multi-agent` | `recommended` | `en` | Repository structure and content-layer model for humans and AI agents. |
 | [Companion repository boundary](../docs/companion-repository.md) | `reference` | `multi-agent` | `starter` | `en` | Boundary between the awesome-agent-search knowledge base and the oh-my-agent-search installable companion. |
+| [Comparison issue backlog](../docs/roadmap/comparison-issues.md) | `reference` | `multi-agent` | `starter` | `en` | Local staging backlog for GitHub issues comparing agent search integration strategies and backends. |
+| [对比调研 Issue Backlog](../docs/zh-CN/comparison-issues.md) | `reference` | `multi-agent` | `starter` | `zh-CN` -> `comparison-issue-backlog` | 用于发布 GitHub issues 前整理 agent 搜索接入策略和后端对比任务的中文本地 backlog。 |
 | [Hardening checklists](../docs/hardening/README.md) | `reference` | `multi-agent` | `starter` | `en` | Index of deployment and operational hardening checklists for SearXNG-backed agent search. |
 | [Internationalization policy](../docs/i18n.md) | `reference` | `multi-agent` | `recommended` | `en` | Bilingual documentation policy for English canonical docs and selected Chinese translations. |
-| [Integration guides](../docs/integrations/README.md) | `reference` | `multi-agent` | `starter` | `en` | Index of public-safe integration guides for connecting coding agents to SearXNG-backed search. |
+| [Integration guides](../docs/integrations/README.md) | `reference` | `multi-agent` | `starter` | `en` | Index of public-safe integration guides for connecting coding agents to search tools, backends, and adapters. |
 | [Integration template](../templates/integration-template.md) | `reference` | `generic` | `starter` | `en` | Reusable template for public-safe search integration examples. |
 | [Known issues](../docs/known-issues.md) | `reference` | `multi-agent` | `recommended` | `en` | Known constraints and deliberate repository decisions. |
 | [Launch checklist](../docs/launch-checklist.md) | `reference` | `multi-agent` | `recommended` | `en` | Pre-launch checklist for metadata, content baseline, privacy review, AI readiness, and validation. |
@@ -60,8 +64,8 @@ make generate-registry-index
 | [License](../LICENSE) | `reference` | `multi-agent` | `recommended` | `en` | MIT license for repository content and supporting scripts. |
 | [Positioning and naming](../docs/positioning.md) | `reference` | `multi-agent` | `recommended` | `en` | Rationale for using an awesome-style name and maintenance model. |
 | [Registry index](../docs/registry-index.md) | `reference` | `multi-agent` | `recommended` | `en` | Human-readable resource index generated from the machine-readable registry. |
-| [Repository overview](../README.md) | `reference` | `multi-agent` | `recommended` | `en` | Human-readable entry point for the repository scope, quick start, and layout. |
-| [Repository overview zh-CN](../README.zh-CN.md) | `reference` | `multi-agent` | `starter` | `zh-CN` -> `repository-overview` | Chinese entry point for repository scope, quick start, and bilingual navigation. |
+| [Repository overview](../README.md) | `reference` | `multi-agent` | `recommended` | `en` | Human-readable entry point for the repository scope, quick start, and multi-backend search integration layout. |
+| [Repository overview zh-CN](../README.zh-CN.md) | `reference` | `multi-agent` | `starter` | `zh-CN` -> `repository-overview` | Chinese entry point for repository scope, quick start, multi-backend search integration, and bilingual navigation. |
 | [Repository visibility checklist](../docs/visibility-checklist.md) | `reference` | `multi-agent` | `recommended` | `en` | GitHub metadata, README, release, social preview, and external discovery checklist for public launch. |
 | [仓库曝光清单](../docs/zh-CN/visibility-checklist.md) | `reference` | `multi-agent` | `starter` | `zh-CN` -> `repository-visibility-checklist` | GitHub metadata、README、release、social preview 和外部发现的中文发布清单。 |
 | [Research report template](../templates/research-report-template.md) | `reference` | `generic` | `starter` | `en` | Reusable template for publishing research findings and limitations. |

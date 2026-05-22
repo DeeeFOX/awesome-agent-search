@@ -25,7 +25,7 @@ GitHub 首页推荐没有确定公式。曝光应来自清晰定位、准确 met
 推荐 description：
 
 ```text
-SearXNG-powered search best practices for Codex, Claude Code, OpenClaw, and AI coding agents.
+Research and best practices for bringing web search into Codex, Claude Code, OpenClaw, and AI coding agents.
 ```
 
 推荐 website：
@@ -63,12 +63,21 @@ developer-tools
 
 GitHub 当前最多支持 20 个 topics。topic 应使用小写字母和连字符，不要包含私有组织名或私有业务词。
 
+Topic audit reminder：
+
+- 优先使用精准高意图 topics，例如 `searxng`、`mcp`、`model-context-protocol`、`claude-code`、`codex`、`openclaw`、`privacy`
+- 除非刻意面向对应受众，否则不要用 `*-skill`、`*-engine` 或单复数近义词替代精准生态词
+- 每次重大定位调整或公开发布后，都应重新检查 topics
+
 ## 搜索入口
 
 GitHub repository search 可以检索仓库名、description、topics 和 README 内容。因此 README 首屏应自然包含这些核心词：
 
 - `awesome-agent-search`
 - `SearXNG`
+- `MCP search`
+- `Brave Search API`
+- `Tavily`
 - `Codex`
 - `Claude Code`
 - `OpenClaw`
@@ -126,18 +135,18 @@ README 应保持 awesome-list 的第一印象：
 
 ## Release 策略
 
-内容基线验证通过后，创建第一个 GitHub release。
+内容基线验证通过后，创建 GitHub release。
 
-推荐 tag：
+下一次 broad-scope positioning release 建议使用：
 
 ```text
-v0.1.0
+v0.2.0
 ```
 
 推荐 title：
 
 ```text
-v0.1.0 - SearXNG search best practices for coding agents
+v0.2.0 - Search integration research for coding agents
 ```
 
 Release notes 应概括：
@@ -208,6 +217,6 @@ GitHub 用户和 agents 都会从维护信号判断项目质量。
 - repository metadata 与推荐定位一致
 - README 首屏自然包含核心搜索词
 - social preview 已设置
-- validation 通过后创建 v0.1.0 release
+- 最新 release 反映当前 multi-backend search-integration scope
 - launch post 不包含私有环境细节
 - 长期曝光文档已写入 `registry/resources.json`

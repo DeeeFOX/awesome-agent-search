@@ -9,7 +9,7 @@ The editable source is [assets/social-preview.svg](../assets/social-preview.svg)
 - size: `1280x640`
 - format: PNG
 - title: `Awesome Agent Search`
-- subtitle: `SearXNG-powered search best practices for coding agents`
+- subtitle: `Search integration research for coding agents`
 
 ## GitHub Setup
 

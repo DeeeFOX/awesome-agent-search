@@ -36,6 +36,7 @@ This layer helps AI systems discover repository structure, entry points, and con
 - `docs/companion-repository.md`: boundary for the installable `oh-my-agent-search` companion
 - `docs/hardening/`: deployment and operational hardening checklists
 - `docs/research/`: sanitized research notes derived from public-safe experiments and drafts
+- `docs/roadmap/`: local staging notes for issue-ready comparison tasks
 - `examples/`: ecosystem-specific integration patterns
 - `registry/`: canonical structured catalog of repository resources
 - `docs/registry-index.md`: generated human-readable view of the registry

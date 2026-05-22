@@ -4,14 +4,15 @@ Use this page as a public-safe launch kit for sharing Awesome Agent Search.
 
 ## English Short Post
 
-I launched Awesome Agent Search: a curated, AI-readable guide for improving coding-agent search with SearXNG.
+I launched Awesome Agent Search: a curated, AI-readable guide for bringing web search into coding agents.
 
 It covers:
 
 - privacy-aware query design
 - Codex, Claude Code, OpenClaw, and generic agent patterns
 - MCP-backed search workflows
-- SearXNG deployment hardening
+- SearXNG, hosted search APIs, native search, and browser retrieval comparisons
+- deployment hardening for search services
 - bilingual English and Chinese docs
 - a machine-readable registry for agents
 
@@ -21,13 +22,14 @@ Repository: https://github.com/DeeeFOX/awesome-agent-search
 
 Coding agents need current information, but web search can easily become unsafe or noisy. Agents may send private context to the web, trust weak sources, over-query public instances, or hide retrieval inside broad prompts.
 
-Awesome Agent Search is a curated best-practices and integration hub for using SearXNG as a privacy-aware search layer for coding agents.
+Awesome Agent Search is a curated best-practices and research hub for bringing search into coding agents.
 
 The first version includes:
 
 - best practices for query shaping, fallback search, rate limits, and citation discipline
 - ecosystem entry points for Codex, Claude Code, OpenClaw, and generic agents
-- a Claude Code MCP guide
+- comparison notes for native search, MCP adapters, SearXNG, hosted search APIs, and browser retrieval
+- a Claude Code MCP guide and SearXNG-focused baseline research
 - SearXNG deployment hardening guidance
 - public-safe research notes
 - English and Chinese entry points
@@ -39,14 +41,15 @@ Repository: https://github.com/DeeeFOX/awesome-agent-search
 
 ## Chinese Short Post
 
-我发布了 Awesome Agent Search：一个用 SearXNG 提升 coding-agent 联网搜索能力的精选实践仓库。
+我发布了 Awesome Agent Search：一个研究如何把联网搜索能力带入 coding agents 的精选实践仓库。
 
 它覆盖：
 
 - 隐私友好的 query design
 - Codex / Claude Code / OpenClaw / 通用 agent 模式
 - MCP 搜索工作流
-- SearXNG 部署加固
+- SearXNG、hosted search API、原生搜索和浏览器检索对比
+- 搜索服务部署加固
 - 中英文文档
 - 面向 AI agents 的机器可读 registry
 
@@ -56,13 +59,14 @@ Repository: https://github.com/DeeeFOX/awesome-agent-search
 
 Coding agents 需要获取最新信息，但联网搜索很容易变成隐私和质量风险：agent 可能把私有上下文发到公网，信任弱来源，对公共实例过度请求，或者把检索过程藏在宽泛 prompt 里。
 
-Awesome Agent Search 是一个精选最佳实践和集成 hub，目标是帮助 Codex、Claude Code、OpenClaw 和其他 coding agents 用 SearXNG 建立更隐私友好、可审计、可复用的搜索层。
+Awesome Agent Search 是一个精选最佳实践和调研 hub，目标是帮助 Codex、Claude Code、OpenClaw 和其他 coding agents 建立更隐私友好、可审计、可复用的搜索层。
 
 首版包含：
 
 - query shaping、fallback search、rate limit、citation discipline 等最佳实践
 - Codex、Claude Code、OpenClaw 和通用 agent 入口
-- Claude Code MCP guide
+- 原生搜索、MCP adapters、SearXNG、hosted search API 和浏览器检索对比
+- Claude Code MCP guide 和 SearXNG baseline research
 - SearXNG deployment hardening
 - 脱敏后的公开研究笔记
 - 中英文入口
