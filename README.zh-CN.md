@@ -12,6 +12,7 @@
 - [快速入口](#快速入口)
 - [精选资源](#精选资源)
 - [生态入口](#生态入口)
+- [可安装 Companion](#可安装-companion)
 - [内容分类](#内容分类)
 - [给 AI Agents](#给-ai-agents)
 - [为什么是 Awesome，不是 Oh My](#为什么是-awesome不是-oh-my)
@@ -62,6 +63,12 @@ Coding agents 的质量很大程度取决于它们能否安全地获取外部信
 | Claude Code | [Claude Code MCP guide](docs/integrations/claude-code-mcp.md) | 基于 MCP 的搜索接入和项目边界。 |
 | OpenClaw | [OpenClaw example](examples/openclaw/README.md) | 操作员管理的搜索 hook 和 review gate。 |
 | 通用 agents | [Generic example](examples/generic/README.md) | 不绑定具体 runtime 的通用模式。 |
+
+## 可安装 Companion
+
+本仓库是 awesome list：负责对比、要求、研究笔记、加固建议和 AI 可读索引。
+
+可运行安装请使用 [oh-my-agent-search](https://github.com/DeeeFOX/oh-my-agent-search)。该 companion 负责安装命令、Claude Code 自助接入流程、安装后检查、生命周期说明和卸载指引。
 
 ## 内容分类
 
@@ -128,6 +135,8 @@ Coding agents 的质量很大程度取决于它们能否安全地获取外部信
 - [Social preview PNG](assets/social-preview.png)
 - [Launch post](docs/launch-post.md)
 - [Launch checklist](docs/launch-checklist.md)
+- [仓库曝光清单](docs/zh-CN/visibility-checklist.md)
+- [v0.1.0 release notes 草案](docs/zh-CN/release-v0.1.0.md)
 
 ## 给 AI Agents
 
@@ -168,9 +177,15 @@ AI agents 应该：
 
 ## 建议 GitHub Topics
 
-`awesome-list`, `agents`, `coding-agents`, `searxng`, `codex`, `claude-code`, `openclaw`, `search`, `privacy`, `agent-tools`
+`awesome-list`, `awesome`, `agents`, `ai-agents`, `coding-agents`, `agent-search`, `agent-tools`, `searxng`, `mcp`, `model-context-protocol`, `claude-code`, `codex`, `openclaw`, `web-search`, `search`, `privacy`, `retrieval`, `llm`, `llm-tools`, `developer-tools`
 
 中文搜索发现主要依赖真实 Markdown 内容和 README 互链。
+
+## 搜索关键词
+
+本仓库适合被这些自然语言关键词发现：`SearXNG search for coding agents`、`Claude Code MCP web search`、`Codex web search best practices`、`OpenClaw search integration`、`privacy-aware agent search`、`AI agent search evaluation`、`MCP SearXNG bridge`、`Claude Code 联网搜索`、`SearXNG MCP 接入`、`coding agent 搜索最佳实践`。
+
+完整发布和发现清单见 [仓库曝光清单](docs/zh-CN/visibility-checklist.md)。
 
 ## 贡献
 

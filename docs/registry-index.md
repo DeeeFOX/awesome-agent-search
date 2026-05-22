@@ -62,11 +62,15 @@ make generate-registry-index
 | [Registry index](../docs/registry-index.md) | `reference` | `multi-agent` | `recommended` | `en` | Human-readable resource index generated from the machine-readable registry. |
 | [Repository overview](../README.md) | `reference` | `multi-agent` | `recommended` | `en` | Human-readable entry point for the repository scope, quick start, and layout. |
 | [Repository overview zh-CN](../README.zh-CN.md) | `reference` | `multi-agent` | `starter` | `zh-CN` -> `repository-overview` | Chinese entry point for repository scope, quick start, and bilingual navigation. |
+| [Repository visibility checklist](../docs/visibility-checklist.md) | `reference` | `multi-agent` | `recommended` | `en` | GitHub metadata, README, release, social preview, and external discovery checklist for public launch. |
+| [仓库曝光清单](../docs/zh-CN/visibility-checklist.md) | `reference` | `multi-agent` | `starter` | `zh-CN` -> `repository-visibility-checklist` | GitHub metadata、README、release、social preview 和外部发现的中文发布清单。 |
 | [Research report template](../templates/research-report-template.md) | `reference` | `generic` | `starter` | `en` | Reusable template for publishing research findings and limitations. |
 | [Social preview guide](../docs/social-preview.md) | `reference` | `multi-agent` | `starter` | `en` | Setup notes for using the repository social preview artwork on GitHub. |
 | [Social preview PNG](../assets/social-preview.png) | `reference` | `multi-agent` | `starter` | `en` | Public repository social preview image for link sharing and launch posts. |
 | [Social preview SVG](../assets/social-preview.svg) | `reference` | `multi-agent` | `starter` | `en` | Editable source artwork for the repository social preview image. |
 | [Submission guide](../docs/submission-guide.md) | `reference` | `multi-agent` | `recommended` | `en` | Contribution requirements for public-safe docs, examples, and research notes. |
+| [v0.1.0 release notes](../docs/release-notes/v0.1.0.md) | `reference` | `multi-agent` | `starter` | `en` | Draft GitHub release notes for the first public Awesome Agent Search release. |
+| [v0.1.0 release notes zh-CN](../docs/zh-CN/release-v0.1.0.md) | `reference` | `multi-agent` | `starter` | `zh-CN` -> `v0-1-0-release-notes` | 首个公开 release notes 的中文对照草案。 |
 | [中文搜索发现](../docs/zh-CN/discovery.md) | `reference` | `multi-agent` | `starter` | `zh-CN` | Chinese keyword and entry-point page for GitHub search discovery and AI-agent navigation. |
 | [Chinese documentation index](../docs/zh-CN/README.md) | `reference` | `multi-agent` | `starter` | `zh-CN` | Chinese-language index for translated docs and bilingual navigation. |
 

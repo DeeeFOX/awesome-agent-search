@@ -14,6 +14,8 @@
 - [Claude Code Bootstrap 要求](claude-code-bootstrap-requirements.md)
 - [SearXNG 部署加固](searxng-deployment-hardening.md)
 - [SearXNG MCP 与 Claude Code 集成研究](searxng-claude-code-mcp.md)
+- [仓库曝光清单](visibility-checklist.md)
+- [v0.1.0 Release Notes](release-v0.1.0.md)
 
 ## 相关英文文档
 
@@ -24,6 +26,8 @@
 - [Claude Code MCP guide](../integrations/claude-code-mcp.md)
 - [SearXNG deployment hardening](../hardening/searxng-deployment.md)
 - [SearXNG MCP integration for Claude Code](../research/searxng-claude-code-mcp.md)
+- [Repository visibility checklist](../visibility-checklist.md)
+- [v0.1.0 release notes](../release-notes/v0.1.0.md)
 - [Research notes](../research/README.md)
 - [Internationalization policy](../i18n.md)
 

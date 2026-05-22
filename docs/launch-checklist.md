@@ -15,6 +15,10 @@ Use this checklist before announcing the repository or asking agents to contribu
 - topics include `awesome-list`, `agents`, `coding-agents`, `searxng`, `codex`, `claude-code`, `openclaw`, `search`, `privacy`, and `agent-tools`
 - README first screen explains the audience and entry points
 - license is present
+- social preview is configured with `assets/social-preview.png`
+- first release plan is ready for `v0.1.0`
+- release notes draft exists at `docs/release-notes/v0.1.0.md`
+- [Repository visibility checklist](visibility-checklist.md) is reviewed before public launch
 
 ## Content Baseline
 
@@ -30,6 +34,7 @@ Use this checklist before announcing the repository or asking agents to contribu
 - templates exist for integration examples and research reports
 - `registry/resources.json` indexes durable resources
 - `docs/launch-post.md` exists for public sharing
+- `docs/visibility-checklist.md` covers GitHub metadata, topics, release, social preview, and external discovery
 
 ## Privacy Review
 
@@ -66,6 +71,8 @@ All commands must pass before launch.
 - v0.1 content baseline is complete
 - required checks pass
 - GitHub metadata is set
+- social preview is set
+- release notes are ready or the `v0.1.0` release exists
 - the first three public contribution ideas are listed as issues or roadmap notes
 - maintainers know whether to accept direct patches or ask for an issue first
 

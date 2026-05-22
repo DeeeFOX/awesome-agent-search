@@ -17,6 +17,7 @@ A curated, public-safe, AI-readable guide to better coding-agent search: query d
 - [Start Here](#start-here)
 - [Featured Resources](#featured-resources)
 - [Ecosystem Entrypoints](#ecosystem-entrypoints)
+- [Installable Companion](#installable-companion)
 - [Curated Sections](#curated-sections)
 - [For AI Agents](#for-ai-agents)
 - [Why Awesome, Not Oh My](#why-awesome-not-oh-my)
@@ -64,6 +65,12 @@ This repository collects practical patterns for using SearXNG as a privacy-aware
 | Claude Code | [Claude Code MCP guide](docs/integrations/claude-code-mcp.md) | MCP-backed search with project-boundary hygiene. |
 | OpenClaw | [OpenClaw example](examples/openclaw/README.md) | Operator-managed search hooks and review gates. |
 | Generic agents | [Generic example](examples/generic/README.md) | Cross-agent patterns without runtime-specific assumptions. |
+
+## Installable Companion
+
+This repository is the curated awesome list: comparisons, requirements, research notes, hardening guidance, and AI-readable indexes.
+
+For runnable setup, use [oh-my-agent-search](https://github.com/DeeeFOX/oh-my-agent-search). The companion owns install commands, Claude Code self-bootstrap flows, post-install checks, lifecycle notes, and uninstall guidance.
 
 ## Curated Sections
 
@@ -125,6 +132,8 @@ This repository collects practical patterns for using SearXNG as a privacy-aware
 - [Social preview PNG](assets/social-preview.png)
 - [Launch post](docs/launch-post.md)
 - [Launch checklist](docs/launch-checklist.md)
+- [Repository visibility checklist](docs/visibility-checklist.md)
+- [v0.1.0 release notes draft](docs/release-notes/v0.1.0.md)
 
 ## For AI Agents
 
@@ -167,7 +176,13 @@ See [Companion repository boundary](docs/companion-repository.md) for the split 
 
 ## Suggested GitHub Topics
 
-`awesome-list`, `agents`, `coding-agents`, `searxng`, `codex`, `claude-code`, `openclaw`, `search`, `privacy`, `agent-tools`
+`awesome-list`, `awesome`, `agents`, `ai-agents`, `coding-agents`, `agent-search`, `agent-tools`, `searxng`, `mcp`, `model-context-protocol`, `claude-code`, `codex`, `openclaw`, `web-search`, `search`, `privacy`, `retrieval`, `llm`, `llm-tools`, `developer-tools`
+
+## Search Keywords
+
+Natural discovery terms for this repository include `SearXNG search for coding agents`, `Claude Code MCP web search`, `Codex web search best practices`, `OpenClaw search integration`, `privacy-aware agent search`, `AI agent search evaluation`, and `MCP SearXNG bridge`.
+
+For the full launch and discovery checklist, see [Repository visibility checklist](docs/visibility-checklist.md).
 
 ## Contributing
 

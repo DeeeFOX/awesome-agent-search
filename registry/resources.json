@@ -321,6 +321,56 @@
       "public": true
     },
     {
+      "id": "repository-visibility-checklist",
+      "title": "Repository visibility checklist",
+      "type": "reference",
+      "ecosystem": "multi-agent",
+      "summary": "GitHub metadata, README, release, social preview, and external discovery checklist for public launch.",
+      "language": "en",
+      "path": "docs/visibility-checklist.md",
+      "tags": ["launch", "visibility", "discovery", "seo", "github"],
+      "maturity": "recommended",
+      "public": true
+    },
+    {
+      "id": "repository-visibility-checklist-zh-cn",
+      "title": "仓库曝光清单",
+      "type": "reference",
+      "ecosystem": "multi-agent",
+      "summary": "GitHub metadata、README、release、social preview 和外部发现的中文发布清单。",
+      "language": "zh-CN",
+      "translationOf": "repository-visibility-checklist",
+      "path": "docs/zh-CN/visibility-checklist.md",
+      "tags": ["launch", "visibility", "discovery", "seo", "github", "translation", "zh-cn"],
+      "maturity": "starter",
+      "public": true
+    },
+    {
+      "id": "v0-1-0-release-notes",
+      "title": "v0.1.0 release notes",
+      "type": "reference",
+      "ecosystem": "multi-agent",
+      "summary": "Draft GitHub release notes for the first public Awesome Agent Search release.",
+      "language": "en",
+      "path": "docs/release-notes/v0.1.0.md",
+      "tags": ["launch", "release", "sharing"],
+      "maturity": "starter",
+      "public": true
+    },
+    {
+      "id": "v0-1-0-release-notes-zh-cn",
+      "title": "v0.1.0 release notes zh-CN",
+      "type": "reference",
+      "ecosystem": "multi-agent",
+      "summary": "首个公开 release notes 的中文对照草案。",
+      "language": "zh-CN",
+      "translationOf": "v0-1-0-release-notes",
+      "path": "docs/zh-CN/release-v0.1.0.md",
+      "tags": ["launch", "release", "sharing", "translation", "zh-cn"],
+      "maturity": "starter",
+      "public": true
+    },
+    {
       "id": "submission-guide",
       "title": "Submission guide",
       "type": "reference",
