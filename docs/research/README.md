@@ -13,12 +13,10 @@ This directory contains public-safe research notes derived from experiments, com
 
 ## Current Notes
 
-- [SearXNG MCP integration for Claude Code](searxng-claude-code-mcp.md)
+- [SearXNG search backend research](searxng-search-backend-research.md)
 - [eze-is/web-access and Browser Retrieval](web-access-browser-retrieval.md)
-- [MCP SearXNG server comparison](../comparisons/mcp-searxng-servers.md)
 
 ## Derived Guides
 
 - [Claude Code MCP guide](../integrations/claude-code-mcp.md)
 - [Claude Code bootstrap requirements](../integrations/claude-code-bootstrap-requirements.md)
-- [SearXNG deployment hardening](../hardening/searxng-deployment.md)

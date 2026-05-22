@@ -20,9 +20,7 @@ Awesome Agent Search 是一个提升 coding-agent 搜索质量的精选、AI 可
 - 原生搜索、MCP、SearXNG、hosted APIs、浏览器检索和本地文档搜索的接入策略对比。
 - Codex、Claude Code、OpenClaw 和通用 agents 的生态入口。
 - Claude Code MCP 指南和 bootstrap 要求。
-- SearXNG 部署加固清单。
-- 搜索后端和 MCP adapter 对比。
-- 脱敏后的 SearXNG + Claude Code MCP 研究笔记。
+- 脱敏后的 SearXNG 搜索后端调研。
 - 英文和中文 README 入口。
 - 高价值文档的中文对照翻译。
 - 面向 AI-agent 导航的 machine-readable registry。
@@ -33,7 +31,7 @@ Awesome Agent Search 是一个提升 coding-agent 搜索质量的精选、AI 可
 - [中文 README](../../README.zh-CN.md)
 - [中文最佳实践](best-practices.md)
 - [Claude Code MCP 指南](claude-code-mcp.md)
-- [搜索后端对比](search-backends.md)
+- [SearXNG 搜索后端调研](searxng-search-backend-research.md)
 - [仓库曝光清单](visibility-checklist.md)
 - [English README](../../README.md)
 - [Resource registry](../../registry/resources.json)
@@ -46,7 +44,7 @@ Awesome Agent Search 是一个提升 coding-agent 搜索质量的精选、AI 可
 
 ## 后续贡献方向
 
-- 更多公开安全的 SearXNG MCP adapter 对比报告。
+- 更多公开安全的 MCP adapter 和 hosted search API 对比报告。
 - 使用公开 query 的 agent-search 可复现评估示例。
 - 高流量文档的更多中文翻译。
 - 更多 coding agents 和 MCP clients 的生态示例。

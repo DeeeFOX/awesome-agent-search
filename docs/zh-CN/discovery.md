@@ -33,8 +33,7 @@ SearXNG 是本仓库重点研究方案之一，但不是唯一方案。可运行
 - 编码智能体联网搜索
 - agent search best practices
 - MCP 搜索适配器
-- SearXNG adapter 对比
-- 搜索后端对比
+- SearXNG 搜索后端调研
 - 隐私友好的联网搜索
 - 本地 SearXNG
 - 自托管 SearXNG
@@ -49,8 +48,7 @@ SearXNG 是本仓库重点研究方案之一，但不是唯一方案。可运行
 | 理解整体定位 | [中文 README](../../README.zh-CN.md) | [README](../../README.md) |
 | 学习核心原则 | [最佳实践](best-practices.md) | [Best practices](../best-practices.md) |
 | 比较搜索接入策略 | [搜索能力接入方案对比](search-integration-strategies.md) | [Search integration strategies](../comparisons/search-integration-strategies.md) |
-| 比较搜索后端 | [搜索后端对比](search-backends.md) | [Search backend comparison](../comparisons/search-backends.md) |
-| 比较 MCP adapter | [MCP SearXNG server 对比](mcp-searxng-servers.md) | [MCP SearXNG server comparison](../comparisons/mcp-searxng-servers.md) |
+| 了解 SearXNG 搜索后端 | [SearXNG 搜索后端调研](searxng-search-backend-research.md) | [SearXNG search backend research](../research/searxng-search-backend-research.md) |
 | 了解 Claude Code 模式 | 暂无全文翻译 | [Claude Code MCP guide](../integrations/claude-code-mcp.md) |
 | 了解安装型 companion 边界 | 暂无全文翻译 | [Companion repository boundary](../companion-repository.md) |
 | 查找机器可读资源 | [Registry index](../registry-index.md) | [Resource registry](../../registry/resources.json) |
@@ -60,8 +58,7 @@ SearXNG 是本仓库重点研究方案之一，但不是唯一方案。可运行
 ### 对比调研
 
 - [搜索能力接入方案对比](search-integration-strategies.md)：比较原生搜索、MCP、SearXNG、hosted APIs、浏览器检索、本地文档搜索和混合路由。
-- [搜索后端对比](search-backends.md)：比较原生搜索、自托管 SearXNG、可信托管 SearXNG、公共 SearXNG 实例、hosted search API、浏览器检索和 direct web search。
-- [MCP SearXNG server 对比](mcp-searxng-servers.md)：比较公开 MCP-to-SearXNG bridge 项目的 runtime、transport、配置方式、适配性和风险。
+- [SearXNG 搜索后端调研](searxng-search-backend-research.md)：融合脱敏后的本地调研和原后端比较笔记，只覆盖 SearXNG 的适用边界和部署形态。
 
 ### Claude Code
 

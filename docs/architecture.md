@@ -34,7 +34,6 @@ This layer helps AI systems discover repository structure, entry points, and con
 - `docs/comparisons/`: backend and approach comparisons for search strategy decisions
 - `docs/integrations/`: public-safe agent integration guides
 - `docs/companion-repository.md`: boundary for the installable `oh-my-agent-search` companion
-- `docs/hardening/`: deployment and operational hardening checklists
 - `docs/research/`: sanitized research notes derived from public-safe experiments and drafts
 - `docs/roadmap/`: local staging notes for issue-ready comparison tasks
 - `examples/`: ecosystem-specific integration patterns

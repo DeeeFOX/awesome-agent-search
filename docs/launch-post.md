@@ -12,7 +12,7 @@ It covers:
 - Codex, Claude Code, OpenClaw, and generic agent patterns
 - MCP-backed search workflows
 - SearXNG, hosted search APIs, native search, and browser retrieval comparisons
-- deployment hardening for search services
+- public-safe research notes for search services
 - bilingual English and Chinese docs
 - a machine-readable registry for agents
 
@@ -30,7 +30,6 @@ The first version includes:
 - ecosystem entry points for Codex, Claude Code, OpenClaw, and generic agents
 - comparison notes for native search, MCP adapters, SearXNG, hosted search APIs, and browser retrieval
 - a Claude Code MCP guide and SearXNG-focused baseline research
-- SearXNG deployment hardening guidance
 - public-safe research notes
 - English and Chinese entry points
 - a machine-readable registry so AI agents can discover resources without guessing
@@ -49,7 +48,7 @@ Repository: https://github.com/DeeeFOX/awesome-agent-search
 - Codex / Claude Code / OpenClaw / 通用 agent 模式
 - MCP 搜索工作流
 - SearXNG、hosted search API、原生搜索和浏览器检索对比
-- 搜索服务部署加固
+- 搜索服务公开安全调研
 - 中英文文档
 - 面向 AI agents 的机器可读 registry
 
@@ -67,7 +66,6 @@ Awesome Agent Search 是一个精选最佳实践和调研 hub，目标是帮助 
 - Codex、Claude Code、OpenClaw 和通用 agent 入口
 - 原生搜索、MCP adapters、SearXNG、hosted search API 和浏览器检索对比
 - Claude Code MCP guide 和 SearXNG baseline research
-- SearXNG deployment hardening
 - 脱敏后的公开研究笔记
 - 中英文入口
 - 面向 AI agents 的机器可读 registry

@@ -275,41 +275,6 @@
       "public": true
     },
     {
-      "id": "hardening-checklists",
-      "title": "Hardening checklists",
-      "type": "reference",
-      "ecosystem": "multi-agent",
-      "summary": "Index of deployment and operational hardening checklists for SearXNG-backed agent search.",
-      "path": "docs/hardening/README.md",
-      "tags": ["hardening", "checklists", "operations"],
-      "maturity": "starter",
-      "public": true
-    },
-    {
-      "id": "searxng-deployment-hardening",
-      "title": "SearXNG deployment hardening",
-      "type": "best-practice",
-      "ecosystem": "multi-agent",
-      "summary": "Checklist for hardening SearXNG instances used by coding-agent search workflows.",
-      "path": "docs/hardening/searxng-deployment.md",
-      "tags": ["searxng", "hardening", "privacy", "operations"],
-      "maturity": "recommended",
-      "public": true
-    },
-    {
-      "id": "searxng-deployment-hardening-zh-cn",
-      "title": "SearXNG 部署加固",
-      "type": "best-practice",
-      "ecosystem": "multi-agent",
-      "summary": "面向 coding-agent 搜索工作流的 SearXNG 部署加固中文对照清单。",
-      "language": "zh-CN",
-      "translationOf": "searxng-deployment-hardening",
-      "path": "docs/zh-CN/searxng-deployment-hardening.md",
-      "tags": ["searxng", "hardening", "privacy", "operations", "translation", "zh-cn"],
-      "maturity": "starter",
-      "public": true
-    },
-    {
       "id": "launch-checklist",
       "title": "Launch checklist",
       "type": "reference",
@@ -418,27 +383,27 @@
       "public": true
     },
     {
-      "id": "search-backend-comparison",
-      "title": "Search backend comparison",
+      "id": "searxng-search-backend-research",
+      "title": "SearXNG search backend research",
       "type": "research",
       "ecosystem": "multi-agent",
-      "summary": "Comparison of native search, SearXNG, hosted search APIs, browser retrieval, and direct web search for coding agents.",
+      "summary": "Sanitized research report on when SearXNG fits agent search and which SearXNG deployment pattern is appropriate.",
       "language": "en",
-      "path": "docs/comparisons/search-backends.md",
-      "tags": ["comparison", "search", "searxng", "brave-search", "tavily", "browser", "privacy"],
+      "path": "docs/research/searxng-search-backend-research.md",
+      "tags": ["research", "search", "searxng", "backend", "privacy"],
       "maturity": "starter",
       "public": true
     },
     {
-      "id": "search-backend-comparison-zh-cn",
-      "title": "搜索后端对比",
+      "id": "searxng-search-backend-research-zh-cn",
+      "title": "SearXNG 搜索后端调研",
       "type": "research",
       "ecosystem": "multi-agent",
-      "summary": "原生搜索、SearXNG、hosted API、浏览器检索和 direct search 取舍的中文对照翻译。",
+      "summary": "SearXNG 何时适合 agent search、应选择哪种部署形态的中文对照调研。",
       "language": "zh-CN",
-      "translationOf": "search-backend-comparison",
-      "path": "docs/zh-CN/search-backends.md",
-      "tags": ["comparison", "search", "searxng", "brave-search", "tavily", "browser", "privacy", "translation", "zh-cn"],
+      "translationOf": "searxng-search-backend-research",
+      "path": "docs/zh-CN/searxng-search-backend-research.md",
+      "tags": ["research", "search", "searxng", "backend", "privacy", "translation", "zh-cn"],
       "maturity": "starter",
       "public": true
     },
@@ -493,31 +458,6 @@
       "public": true
     },
     {
-      "id": "mcp-searxng-server-comparison",
-      "title": "MCP SearXNG server comparison",
-      "type": "research",
-      "ecosystem": "claude-code",
-      "summary": "Adapter matrix for SearXNG MCP bridge projects and Claude Code bootstrap readiness.",
-      "language": "en",
-      "path": "docs/comparisons/mcp-searxng-servers.md",
-      "tags": ["comparison", "mcp", "searxng", "claude-code"],
-      "maturity": "experimental",
-      "public": true
-    },
-    {
-      "id": "mcp-searxng-server-comparison-zh-cn",
-      "title": "MCP SearXNG server 对比",
-      "type": "research",
-      "ecosystem": "claude-code",
-      "summary": "面向 Claude Code 和安装型 starter 的 MCP-to-SearXNG bridge 对比中文翻译。",
-      "language": "zh-CN",
-      "translationOf": "mcp-searxng-server-comparison",
-      "path": "docs/zh-CN/mcp-searxng-servers.md",
-      "tags": ["comparison", "mcp", "searxng", "claude-code", "translation", "zh-cn"],
-      "maturity": "experimental",
-      "public": true
-    },
-    {
       "id": "research-notes",
       "title": "Research notes",
       "type": "research",
@@ -525,30 +465,6 @@
       "summary": "Index of sanitized public research notes derived from experiments, comparisons, and integration studies.",
       "path": "docs/research/README.md",
       "tags": ["research", "notes", "public-safe"],
-      "maturity": "starter",
-      "public": true
-    },
-    {
-      "id": "searxng-claude-code-mcp-research",
-      "title": "SearXNG MCP integration for Claude Code",
-      "type": "research",
-      "ecosystem": "claude-code",
-      "summary": "Sanitized research note on using SearXNG through MCP for Claude Code and adjacent agent workflows.",
-      "path": "docs/research/searxng-claude-code-mcp.md",
-      "tags": ["searxng", "claude-code", "mcp", "research"],
-      "maturity": "starter",
-      "public": true
-    },
-    {
-      "id": "searxng-claude-code-mcp-research-zh-cn",
-      "title": "SearXNG MCP 与 Claude Code 集成研究",
-      "type": "research",
-      "ecosystem": "claude-code",
-      "summary": "SearXNG 通过 MCP 用于 Claude Code 和相邻 agent workflows 的中文研究笔记。",
-      "language": "zh-CN",
-      "translationOf": "searxng-claude-code-mcp-research",
-      "path": "docs/zh-CN/searxng-claude-code-mcp.md",
-      "tags": ["searxng", "claude-code", "mcp", "research", "translation", "zh-cn"],
       "maturity": "starter",
       "public": true
     },

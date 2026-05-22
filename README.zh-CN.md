@@ -34,10 +34,10 @@ Coding agents 面对的是不断变化的外部世界：文档、API、SDK、rel
 | --- | --- | --- | --- | --- | --- |
 | [OpenAI Web Search](https://developers.openai.com/api/docs/guides/tools-web-search) | 寻找中 | [搜索能力接入方案对比](docs/zh-CN/search-integration-strategies.md) | 所选 OpenAI runtime 已暴露 web search 时，接入成本低，检索路径集成度高。 | 对 backend choice、ranking、logs、routing 和可复现性的 operator 控制较弱。 | <a href="https://developers.openai.com/codex/cloud"><code>Codex</code></a> |
 | [Claude MCP Web Search](https://support.claude.com/en/articles/14503775-mcp-web-search) | 寻找中 | [搜索能力接入方案对比](docs/zh-CN/search-integration-strategies.md) | 产品或 workspace 支持时，可用 Claude 侧托管路径，减少自建基础设施。 | 可用性受 Claude 产品、workspace、账号和地区影响；backend policy 由 provider 管理。 | <a href="https://code.claude.com/docs/"><code>Claude Code</code></a> |
-| [Model Context Protocol](https://modelcontextprotocol.io/) | [Claude Code MCP 接入模式](docs/zh-CN/claude-code-mcp.md) | [MCP SearXNG server 对比](docs/zh-CN/mcp-searxng-servers.md) | 工具边界清晰；后端可替换；比隐藏式检索更容易审计 agent 行为。 | 需要管理 install scope、lifecycle、权限、凭据、tool schema 和卸载纪律。 | <a href="https://code.claude.com/docs/"><code>Claude Code</code></a> <a href="https://modelcontextprotocol.io/"><code>MCP agents</code></a> |
-| [SearXNG](https://docs.searxng.org/) | [SearXNG 部署加固](docs/zh-CN/searxng-deployment-hardening.md)<br>[oh-my-agent-search](https://github.com/DeeeFOX/oh-my-agent-search) | [SearXNG MCP 与 Claude Code 集成研究](docs/zh-CN/searxng-claude-code-mcp.md)<br>[MCP SearXNG server 对比](docs/zh-CN/mcp-searxng-servers.md) | operator 可控引擎、JSON 输出、日志、留存和部署策略。 | 需要运维；engine availability 和结果质量受环境影响；API-style access 需要启用 JSON。 | <a href="https://code.claude.com/docs/"><code>Claude Code</code></a> <a href="https://developers.openai.com/codex/cloud"><code>Codex</code></a> <a href="https://openclaw.ai/"><code>OpenClaw</code></a> |
-| [Brave Search API](https://brave.com/search/api/) | 寻找中 | [搜索后端对比](docs/zh-CN/search-backends.md) | 托管 web search API，集成面直接；适合不想维护搜索基础设施的团队。 | 需要评估外部 provider trust、query policy、credentials、quota、cost 和 source ranking。 | <a href="https://developers.openai.com/codex/cloud"><code>Codex</code></a> <a href="https://code.claude.com/docs/"><code>Claude Code</code></a> <a href="https://openclaw.ai/"><code>OpenClaw</code></a> <a href="https://modelcontextprotocol.io/"><code>MCP agents</code></a> |
-| [Tavily API](https://docs.tavily.com/api-reference/introduction) | 寻找中 | [搜索后端对比](docs/zh-CN/search-backends.md) | API 形态更贴近 agent retrieval，适合结构化检索和产品化搜索工作流。 | 托管依赖；cost、quota、data policy 和 answer abstraction 可能降低透明度。 | <a href="https://developers.openai.com/codex/cloud"><code>Codex</code></a> <a href="https://code.claude.com/docs/"><code>Claude Code</code></a> <a href="https://openclaw.ai/"><code>OpenClaw</code></a> <a href="https://modelcontextprotocol.io/"><code>MCP agents</code></a> |
+| [Model Context Protocol](https://modelcontextprotocol.io/) | 寻找中 | [搜索能力接入方案对比](docs/zh-CN/search-integration-strategies.md) | 工具边界清晰；后端可替换；比隐藏式检索更容易审计 agent 行为。 | 需要管理 install scope、lifecycle、权限、凭据、tool schema 和卸载纪律。 | <a href="https://code.claude.com/docs/"><code>Claude Code</code></a> <a href="https://modelcontextprotocol.io/"><code>MCP agents</code></a> |
+| [SearXNG](https://docs.searxng.org/) | [oh-my-agent-search](https://github.com/DeeeFOX/oh-my-agent-search) | [SearXNG 搜索后端调研](docs/zh-CN/searxng-search-backend-research.md) | operator 可控引擎、JSON 输出、日志、留存和部署策略。 | 需要运维；engine availability 和结果质量受环境影响；API-style access 需要启用 JSON。 | <a href="https://code.claude.com/docs/"><code>Claude Code</code></a> <a href="https://developers.openai.com/codex/cloud"><code>Codex</code></a> <a href="https://openclaw.ai/"><code>OpenClaw</code></a> |
+| [Brave Search API](https://brave.com/search/api/) | 寻找中 | 调研中 | 托管 web search API，集成面直接；适合不想维护搜索基础设施的团队。 | 需要评估外部 provider trust、query policy、credentials、quota、cost 和 source ranking。 | <a href="https://developers.openai.com/codex/cloud"><code>Codex</code></a> <a href="https://code.claude.com/docs/"><code>Claude Code</code></a> <a href="https://openclaw.ai/"><code>OpenClaw</code></a> <a href="https://modelcontextprotocol.io/"><code>MCP agents</code></a> |
+| [Tavily API](https://docs.tavily.com/api-reference/introduction) | 寻找中 | 调研中 | API 形态更贴近 agent retrieval，适合结构化检索和产品化搜索工作流。 | 托管依赖；cost、quota、data policy 和 answer abstraction 可能降低透明度。 | <a href="https://developers.openai.com/codex/cloud"><code>Codex</code></a> <a href="https://code.claude.com/docs/"><code>Claude Code</code></a> <a href="https://openclaw.ai/"><code>OpenClaw</code></a> <a href="https://modelcontextprotocol.io/"><code>MCP agents</code></a> |
 | [eze-is/web-access](https://github.com/eze-is/web-access) | 寻找中 | [eze-is/web-access 与浏览器检索](docs/zh-CN/web-access-browser-retrieval.md) | 支持渲染页面、导航、交互、截图和页面状态证据。 | 比 search API 更慢且更脆弱；browser profile、cookie、session 和 prompt injection 需要严格处理。 | <a href="https://code.claude.com/docs/"><code>Claude Code</code></a> |
 
 ## 给 AI Agents
@@ -69,9 +69,8 @@ AI agents 应该：
 | --- | --- | --- |
 | 核心实践 | [最佳实践](docs/zh-CN/best-practices.md) | query design、fallback、logging、citation 和安全贡献规则。 |
 | 策略对比 | [搜索能力接入方案对比](docs/zh-CN/search-integration-strategies.md) | 在原生搜索、MCP、SearXNG、hosted APIs、浏览器检索、本地文档和混合路由之间做选择。 |
-| 后端对比 | [搜索后端对比](docs/zh-CN/search-backends.md) | 比较原生搜索、SearXNG、hosted APIs、浏览器检索和 direct search 的取舍。 |
+| SearXNG 调研 | [SearXNG 搜索后端调研](docs/zh-CN/searxng-search-backend-research.md) | 理解 SearXNG 何时适合 agent search，以及应该选择哪种部署形态。 |
 | 浏览器路线 | [eze-is/web-access 笔记](docs/zh-CN/web-access-browser-retrieval.md) | 理解 browser/CDP retrieval 作为 Claude Code 代表路径的价值和限制。 |
-| SearXNG 路线 | [SearXNG 部署加固](docs/zh-CN/searxng-deployment-hardening.md) | 加固面向 agent workflows 的自托管或托管 SearXNG。 |
 | MCP 路线 | [Claude Code MCP guide](docs/integrations/claude-code-mcp.md) | 通过显式 MCP tools 为 Claude Code 接入搜索。 |
 | 调研队列 | [对比调研 issue backlog](docs/zh-CN/comparison-issues.md) | 将聚焦的对比任务发布成 GitHub issues。 |
 | Registry | [Machine-readable registry](registry/resources.json) 和 [registry index](docs/registry-index.md) | 帮助人和 agents 发现长期资源。 |
@@ -93,7 +92,7 @@ AI agents 应该：
 
 仓库结构：
 
-- [docs/](docs): 定位、架构、对比、集成、加固、i18n、研究、评估、roadmap、发布和提交指南。
+- [docs/](docs): 定位、架构、对比、集成、i18n、研究、评估、roadmap、发布和提交指南。
 - [examples/](examples): 按生态划分的最小集成模式。
 - [registry/resources.json](registry/resources.json): 机器可读资源目录。
 - [templates/](templates): 可复用的集成和研究模板。

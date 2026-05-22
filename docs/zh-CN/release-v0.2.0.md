@@ -17,7 +17,7 @@ SearXNG 仍然是重要的隐私友好 baseline，但它不再被定义为唯一
 - 将 README、中文 README、AGENTS guide 和 positioning docs 调整为 multi-backend search integration 定位。
 - 新增 [搜索能力接入方案对比](search-integration-strategies.md)。
 - 新增 [对比调研 Issue Backlog](comparison-issues.md)，用于整理可发布成 issues 的调研任务。
-- 扩展 [搜索后端对比](search-backends.md)，不再只围绕 SearXNG。
+- 新增 [SearXNG 搜索后端调研](searxng-search-backend-research.md)，作为脱敏后的 SearXNG-specific evidence base。
 - 新增策略和 issue backlog 的中文对照文档。
 - 更新 machine-readable registry 和生成的 registry index。
 - 更新 social preview artwork，使其反映更宽的研究范围。

@@ -28,7 +28,6 @@ Use this checklist before announcing the repository or asking agents to contribu
 - `AGENTS.md` defines allowed and forbidden agent behavior
 - `docs/best-practices.md` contains actionable search guidance
 - `docs/integrations/` contains public-safe integration guides
-- `docs/hardening/` contains deployment hardening checklists
 - `docs/research/` contains only sanitized public notes
 - examples exist for Codex, Claude Code, OpenClaw, and generic agents
 - templates exist for integration examples and research reports
