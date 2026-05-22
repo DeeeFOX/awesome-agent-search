@@ -102,7 +102,13 @@ This repository collects practical patterns for using SearXNG as a privacy-aware
 
 - [Chinese README](README.zh-CN.md)
 - [Chinese docs index](docs/zh-CN/README.md)
+- [Chinese discovery keywords](docs/zh-CN/discovery.md)
 - [Chinese best practices](docs/zh-CN/best-practices.md)
+- [Chinese search backend comparison](docs/zh-CN/search-backends.md)
+- [Chinese MCP SearXNG server comparison](docs/zh-CN/mcp-searxng-servers.md)
+- [Chinese Claude Code MCP guide](docs/zh-CN/claude-code-mcp.md)
+- [Chinese SearXNG deployment hardening](docs/zh-CN/searxng-deployment-hardening.md)
+- [Chinese SearXNG Claude Code MCP research note](docs/zh-CN/searxng-claude-code-mcp.md)
 - [Internationalization policy](docs/i18n.md)
 
 ### Machine-Readable Layer

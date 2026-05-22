@@ -6,14 +6,24 @@
 
 ## 当前翻译
 
+- [中文搜索发现](discovery.md)
 - [最佳实践](best-practices.md)
+- [搜索后端对比](search-backends.md)
+- [MCP SearXNG server 对比](mcp-searxng-servers.md)
+- [Claude Code MCP 指南](claude-code-mcp.md)
+- [Claude Code Bootstrap 要求](claude-code-bootstrap-requirements.md)
+- [SearXNG 部署加固](searxng-deployment-hardening.md)
+- [SearXNG MCP 与 Claude Code 集成研究](searxng-claude-code-mcp.md)
 
 ## 相关英文文档
 
 - [Best practices](../best-practices.md)
+- [Search backend comparison](../comparisons/search-backends.md)
+- [MCP SearXNG server comparison](../comparisons/mcp-searxng-servers.md)
 - [Claude Code bootstrap requirements](../integrations/claude-code-bootstrap-requirements.md)
 - [Claude Code MCP guide](../integrations/claude-code-mcp.md)
 - [SearXNG deployment hardening](../hardening/searxng-deployment.md)
+- [SearXNG MCP integration for Claude Code](../research/searxng-claude-code-mcp.md)
 - [Research notes](../research/README.md)
 - [Internationalization policy](../i18n.md)
 

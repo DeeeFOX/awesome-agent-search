@@ -191,6 +191,18 @@
       "public": true
     },
     {
+      "id": "zh-cn-discovery",
+      "title": "中文搜索发现",
+      "type": "reference",
+      "ecosystem": "multi-agent",
+      "summary": "Chinese keyword and entry-point page for GitHub search discovery and AI-agent navigation.",
+      "language": "zh-CN",
+      "path": "docs/zh-CN/discovery.md",
+      "tags": ["translation", "zh-cn", "discovery", "seo", "agents"],
+      "maturity": "starter",
+      "public": true
+    },
+    {
       "id": "registry-index-generator",
       "title": "Registry index generator",
       "type": "tool",
@@ -225,6 +237,19 @@
       "public": true
     },
     {
+      "id": "claude-code-mcp-guide-zh-cn",
+      "title": "Claude Code MCP 指南",
+      "type": "integration",
+      "ecosystem": "claude-code",
+      "summary": "Claude Code 通过 MCP 使用 SearXNG 搜索的中文对照指南。",
+      "language": "zh-CN",
+      "translationOf": "claude-code-mcp-guide",
+      "path": "docs/zh-CN/claude-code-mcp.md",
+      "tags": ["claude-code", "mcp", "searxng", "integration", "translation", "zh-cn"],
+      "maturity": "starter",
+      "public": true
+    },
+    {
       "id": "claude-code-bootstrap-requirements",
       "title": "Claude Code bootstrap requirements",
       "type": "integration",
@@ -233,6 +258,19 @@
       "language": "en",
       "path": "docs/integrations/claude-code-bootstrap-requirements.md",
       "tags": ["claude-code", "mcp", "searxng", "bootstrap", "requirements"],
+      "maturity": "starter",
+      "public": true
+    },
+    {
+      "id": "claude-code-bootstrap-requirements-zh-cn",
+      "title": "Claude Code Bootstrap 要求",
+      "type": "integration",
+      "ecosystem": "claude-code",
+      "summary": "Claude Code SearXNG MCP bootstrap flow 应满足要求的中文对照说明。",
+      "language": "zh-CN",
+      "translationOf": "claude-code-bootstrap-requirements",
+      "path": "docs/zh-CN/claude-code-bootstrap-requirements.md",
+      "tags": ["claude-code", "mcp", "searxng", "bootstrap", "requirements", "translation", "zh-cn"],
       "maturity": "starter",
       "public": true
     },
@@ -256,6 +294,19 @@
       "path": "docs/hardening/searxng-deployment.md",
       "tags": ["searxng", "hardening", "privacy", "operations"],
       "maturity": "recommended",
+      "public": true
+    },
+    {
+      "id": "searxng-deployment-hardening-zh-cn",
+      "title": "SearXNG 部署加固",
+      "type": "best-practice",
+      "ecosystem": "multi-agent",
+      "summary": "面向 coding-agent 搜索工作流的 SearXNG 部署加固中文对照清单。",
+      "language": "zh-CN",
+      "translationOf": "searxng-deployment-hardening",
+      "path": "docs/zh-CN/searxng-deployment-hardening.md",
+      "tags": ["searxng", "hardening", "privacy", "operations", "translation", "zh-cn"],
+      "maturity": "starter",
       "public": true
     },
     {
@@ -304,6 +355,19 @@
       "public": true
     },
     {
+      "id": "search-backend-comparison-zh-cn",
+      "title": "搜索后端对比",
+      "type": "research",
+      "ecosystem": "multi-agent",
+      "summary": "SearXNG、公共实例、hosted API 和 direct search 取舍的中文对照翻译。",
+      "language": "zh-CN",
+      "translationOf": "search-backend-comparison",
+      "path": "docs/zh-CN/search-backends.md",
+      "tags": ["comparison", "search", "searxng", "privacy", "translation", "zh-cn"],
+      "maturity": "starter",
+      "public": true
+    },
+    {
       "id": "mcp-searxng-server-comparison",
       "title": "MCP SearXNG server comparison",
       "type": "research",
@@ -312,6 +376,19 @@
       "language": "en",
       "path": "docs/comparisons/mcp-searxng-servers.md",
       "tags": ["comparison", "mcp", "searxng", "claude-code"],
+      "maturity": "experimental",
+      "public": true
+    },
+    {
+      "id": "mcp-searxng-server-comparison-zh-cn",
+      "title": "MCP SearXNG server 对比",
+      "type": "research",
+      "ecosystem": "claude-code",
+      "summary": "面向 Claude Code 和安装型 starter 的 MCP-to-SearXNG bridge 对比中文翻译。",
+      "language": "zh-CN",
+      "translationOf": "mcp-searxng-server-comparison",
+      "path": "docs/zh-CN/mcp-searxng-servers.md",
+      "tags": ["comparison", "mcp", "searxng", "claude-code", "translation", "zh-cn"],
       "maturity": "experimental",
       "public": true
     },
@@ -334,6 +411,19 @@
       "summary": "Sanitized research note on using SearXNG through MCP for Claude Code and adjacent agent workflows.",
       "path": "docs/research/searxng-claude-code-mcp.md",
       "tags": ["searxng", "claude-code", "mcp", "research"],
+      "maturity": "starter",
+      "public": true
+    },
+    {
+      "id": "searxng-claude-code-mcp-research-zh-cn",
+      "title": "SearXNG MCP 与 Claude Code 集成研究",
+      "type": "research",
+      "ecosystem": "claude-code",
+      "summary": "SearXNG 通过 MCP 用于 Claude Code 和相邻 agent workflows 的中文研究笔记。",
+      "language": "zh-CN",
+      "translationOf": "searxng-claude-code-mcp-research",
+      "path": "docs/zh-CN/searxng-claude-code-mcp.md",
+      "tags": ["searxng", "claude-code", "mcp", "research", "translation", "zh-cn"],
       "maturity": "starter",
       "public": true
     },
