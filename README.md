@@ -103,6 +103,7 @@ For runnable setup, use [oh-my-agent-search](https://github.com/DeeeFOX/oh-my-ag
 - [Companion repository boundary](docs/companion-repository.md)
 - [Research note index](docs/research/README.md)
 - [SearXNG MCP integration for Claude Code](docs/research/searxng-claude-code-mcp.md)
+- [eze-is/web-access browser retrieval note](docs/research/web-access-browser-retrieval.md)
 - [Search integration strategies](docs/comparisons/search-integration-strategies.md)
 - [Search backend comparison](docs/comparisons/search-backends.md)
 - [MCP SearXNG server comparison](docs/comparisons/mcp-searxng-servers.md)
@@ -121,6 +122,7 @@ For runnable setup, use [oh-my-agent-search](https://github.com/DeeeFOX/oh-my-ag
 - [Chinese Claude Code MCP guide](docs/zh-CN/claude-code-mcp.md)
 - [Chinese SearXNG deployment hardening](docs/zh-CN/searxng-deployment-hardening.md)
 - [Chinese SearXNG Claude Code MCP research note](docs/zh-CN/searxng-claude-code-mcp.md)
+- [Chinese eze-is/web-access browser retrieval note](docs/zh-CN/web-access-browser-retrieval.md)
 - [Chinese comparison issue backlog](docs/zh-CN/comparison-issues.md)
 - [Internationalization policy](docs/i18n.md)
 

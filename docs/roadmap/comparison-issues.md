@@ -112,6 +112,7 @@ Compare:
 - browser plugin/extension routes
 - direct HTTP fetch
 - search API result retrieval
+- representative browser/CDP skills such as [eze-is/web-access](https://github.com/eze-is/web-access)
 
 Evaluation dimensions:
 

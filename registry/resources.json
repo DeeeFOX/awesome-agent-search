@@ -553,6 +553,31 @@
       "public": true
     },
     {
+      "id": "web-access-browser-retrieval",
+      "title": "eze-is/web-access and Browser Retrieval",
+      "type": "research",
+      "ecosystem": "claude-code",
+      "summary": "Research note on treating eze-is/web-access as a representative browser/CDP retrieval path for Claude Code search integration research.",
+      "language": "en",
+      "path": "docs/research/web-access-browser-retrieval.md",
+      "tags": ["browser", "cdp", "claude-code", "retrieval", "research"],
+      "maturity": "experimental",
+      "public": true
+    },
+    {
+      "id": "web-access-browser-retrieval-zh-cn",
+      "title": "eze-is/web-access 与浏览器检索",
+      "type": "research",
+      "ecosystem": "claude-code",
+      "summary": "将 eze-is/web-access 作为 Claude Code 搜索接入研究中的代表性 browser/CDP 路径的中文研究笔记。",
+      "language": "zh-CN",
+      "translationOf": "web-access-browser-retrieval",
+      "path": "docs/zh-CN/web-access-browser-retrieval.md",
+      "tags": ["browser", "cdp", "claude-code", "retrieval", "research", "translation", "zh-cn"],
+      "maturity": "experimental",
+      "public": true
+    },
+    {
       "id": "known-issues",
       "title": "Known issues",
       "type": "reference",

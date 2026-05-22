@@ -98,6 +98,10 @@ Evaluate:
 - latency and reliability under automation
 - cleanup of browser state after the run
 
+Representative project:
+
+- [eze-is/web-access](https://github.com/eze-is/web-access) - a Claude Code-oriented browser/CDP skill that can be used to study browser-driven retrieval and page-state evidence.
+
 ### Local Or Private Documentation Search
 
 Local search should remain the first route when the answer can be found in repository files, vendored docs, docs mirrors, or internal indexes.

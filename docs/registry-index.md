@@ -44,6 +44,8 @@ make generate-registry-index
 | [搜索能力接入方案对比](../docs/zh-CN/search-integration-strategies.md) | `research` | `multi-agent` | `starter` | `zh-CN` -> `search-integration-strategies` | 原生搜索、MCP、SearXNG、hosted APIs、浏览器检索、本地文档和混合路由的搜索接入策略中文对照。 |
 | [SearXNG MCP integration for Claude Code](../docs/research/searxng-claude-code-mcp.md) | `research` | `claude-code` | `starter` | `en` | Sanitized research note on using SearXNG through MCP for Claude Code and adjacent agent workflows. |
 | [SearXNG MCP 与 Claude Code 集成研究](../docs/zh-CN/searxng-claude-code-mcp.md) | `research` | `claude-code` | `starter` | `zh-CN` -> `searxng-claude-code-mcp-research` | SearXNG 通过 MCP 用于 Claude Code 和相邻 agent workflows 的中文研究笔记。 |
+| [eze-is/web-access and Browser Retrieval](../docs/research/web-access-browser-retrieval.md) | `research` | `claude-code` | `experimental` | `en` | Research note on treating eze-is/web-access as a representative browser/CDP retrieval path for Claude Code search integration research. |
+| [eze-is/web-access 与浏览器检索](../docs/zh-CN/web-access-browser-retrieval.md) | `research` | `claude-code` | `experimental` | `zh-CN` -> `web-access-browser-retrieval` | 将 eze-is/web-access 作为 Claude Code 搜索接入研究中的代表性 browser/CDP 路径的中文研究笔记。 |
 
 ## References
 

@@ -106,6 +106,7 @@ Coding agents 的质量很大程度取决于它们能否安全地获取外部信
 - [Research note index](docs/research/README.md)
 - [SearXNG MCP integration for Claude Code](docs/research/searxng-claude-code-mcp.md)
 - [SearXNG MCP 与 Claude Code 集成研究](docs/zh-CN/searxng-claude-code-mcp.md)
+- [eze-is/web-access 浏览器检索笔记](docs/zh-CN/web-access-browser-retrieval.md)
 - [搜索能力接入方案对比](docs/zh-CN/search-integration-strategies.md)
 - [Search backend comparison](docs/comparisons/search-backends.md)
 - [MCP SearXNG server comparison](docs/comparisons/mcp-searxng-servers.md)
@@ -124,6 +125,7 @@ Coding agents 的质量很大程度取决于它们能否安全地获取外部信
 - [Claude Code Bootstrap 要求](docs/zh-CN/claude-code-bootstrap-requirements.md)
 - [SearXNG 部署加固](docs/zh-CN/searxng-deployment-hardening.md)
 - [SearXNG MCP 与 Claude Code 集成研究](docs/zh-CN/searxng-claude-code-mcp.md)
+- [eze-is/web-access 与浏览器检索](docs/zh-CN/web-access-browser-retrieval.md)
 - [对比调研 Issue Backlog](docs/zh-CN/comparison-issues.md)
 - [Internationalization policy](docs/i18n.md)
 

@@ -19,6 +19,8 @@ SearXNG 是本仓库重点研究方案之一，但不是唯一方案。可运行
 - Brave Search API
 - Tavily 搜索
 - 浏览器检索
+- web-access
+- Claude Code browser/CDP
 - 原生联网搜索
 - provider-managed web search
 - Claude Code 联网搜索
