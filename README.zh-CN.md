@@ -2,150 +2,41 @@
 
 [English](README.md) | 中文
 
-> 面向 Codex、Claude Code、OpenClaw 和其他 coding agents 的搜索能力接入调研与最佳实践。
+> 面向 Codex、Claude Code、OpenClaw 和其他 coding agents 的外部搜索能力接入调研与最佳实践。
 
-一个精选、公开安全、AI 可读的 coding-agent 搜索指南：覆盖原生联网搜索、MCP 搜索适配、SearXNG、hosted search API、浏览器检索、查询设计、加固、评估方法和研究笔记。
+一个精选、公开安全、AI 可读的 agent 搜索接入研究 hub：覆盖原生联网搜索、MCP 适配器、自托管搜索、hosted search API、浏览器/CDP 检索、本地文档搜索、混合路由、评估方法和实现参考。
 
 ## 目录
 
 - [为什么需要它](#为什么需要它)
-- [快速入口](#快速入口)
-- [精选资源](#精选资源)
-- [生态入口](#生态入口)
-- [可安装 Companion](#可安装-companion)
-- [内容分类](#内容分类)
+- [可选方案](#可选方案)
 - [给 AI Agents](#给-ai-agents)
 - [为什么是 Awesome，不是 Oh My](#为什么是-awesome不是-oh-my)
-- [参考项目](#参考项目)
+- [资源和参考](#资源和参考)
+- [附录：仓库导航](#附录仓库导航)
 - [贡献](#贡献)
 
 ## 为什么需要它
 
-Coding agents 的质量很大程度取决于它们能否安全地获取外部信息。搜索一旦处理不好，就容易把私有上下文发到公网、信任弱来源、对外部服务过度请求，或者把检索行为藏在宽泛 prompt 里。
+Coding agents 面对的是不断变化的外部世界：文档、API、SDK、release notes、包行为、安全公告、产品策略、issue threads、benchmark、示例代码和渲染后的网页。仅靠本地仓库上下文是不够的，因为它无法覆盖 agent 在真实任务中需要引用和验证的所有公开资料。
 
-本仓库比较将搜索能力引入 agents 的不同路径。SearXNG 是重要的隐私友好方案，但它只是其中一种策略；其他策略还包括 agent 原生联网搜索、MCP 搜索适配器、hosted search API、浏览器检索和本地文档搜索。
+本仓库重点回答一个实际问题：
 
-## 快速入口
+> Agent 在当前任务中应该使用哪一种搜索路径，以及它的取舍是什么？
 
-| 读者 | 入口 | 用途 |
-| --- | --- | --- |
-| 人类读者 | [最佳实践](docs/zh-CN/best-practices.md) | 理解隐私友好的 agent 搜索模式。 |
-| 英文读者 | [English README](README.md) | 阅读 canonical source。 |
-| AI agents | [AGENTS.md](AGENTS.md) | 遵守编辑、验证和隐私规则。 |
-| 集成者 | [集成指南](docs/integrations/README.md) | 将 agent 接入搜索工具、后端和适配器。 |
-| 部署者 | [部署加固](docs/hardening/searxng-deployment.md) | 加固面向 agent 的自托管或托管搜索服务。 |
-| 研究者 | [研究笔记](docs/research/README.md) | 阅读和贡献公开安全的研究结果。 |
-| 维护者 | [提交指南](docs/submission-guide.md) | 审核 issue、PR 和 registry entries。 |
+这里整理被调研过的可选方案、官方入口、最佳实践说明、对比标准和可发布成 issue 的调研任务，帮助 agent builders 在原生搜索、MCP 工具、自托管搜索、hosted API、浏览器检索、本地文档搜索和混合路由之间做出有依据的选择。
 
-## 精选资源
+## 可选方案
 
-- [中文最佳实践](docs/zh-CN/best-practices.md) - 查询设计、fallback、rate limit、日志和来源处理。
-- [Best practices](docs/best-practices.md) - 英文 canonical version。
-- [搜索能力接入方案对比](docs/zh-CN/search-integration-strategies.md) - 原生搜索、MCP、SearXNG、hosted API、浏览器检索和混合路由。
-- [Claude Code MCP guide](docs/integrations/claude-code-mcp.md) - 安全边界清晰的 MCP 搜索流程。
-- [Claude Code MCP 指南](docs/zh-CN/claude-code-mcp.md) - Claude Code + SearXNG + MCP 的中文对照说明。
-- [Claude Code bootstrap requirements](docs/integrations/claude-code-bootstrap-requirements.md) - 安全 Claude Code starter 应满足的要求。
-- [oh-my-agent-search](https://github.com/DeeeFOX/oh-my-agent-search) - 可安装 companion，负责可运行设置、检查和生命周期文档。
-- [SearXNG deployment hardening](docs/hardening/searxng-deployment.md) - 面向部署者的加固清单。
-- [SearXNG 部署加固](docs/zh-CN/searxng-deployment-hardening.md) - 部署加固中文对照清单。
-- [SearXNG MCP research note](docs/research/searxng-claude-code-mcp.md) - 从本地研究脱敏整理出的公开笔记。
-- [Search backend comparison](docs/comparisons/search-backends.md) - 原生搜索、SearXNG、hosted API、浏览器检索和 direct search 的取舍。
-- [MCP SearXNG server comparison](docs/comparisons/mcp-searxng-servers.md) - 面向 Claude Code 和安装型 starter 的 adapter 对比。
-- [对比调研 issue backlog](docs/zh-CN/comparison-issues.md) - 用于后续发布 GitHub issues 的调研任务草案。
-- [Companion repository boundary](docs/companion-repository.md) - 当前 awesome 仓库和 `oh-my-agent-search` 的边界。
-- [中文搜索发现](docs/zh-CN/discovery.md) - 面向中文 GitHub 搜索和 AI 检索的关键词与入口。
-- [Machine-readable registry](registry/resources.json) - 面向人和 AI 的结构化资源目录。
-- [Registry index](docs/registry-index.md) - 从机器 registry 生成的人类可读资源目录。
-
-## 生态入口
-
-| 生态 | 资源 | 重点 |
-| --- | --- | --- |
-| Codex | [Codex example](examples/codex/README.md) | 显式、可审计的搜索路径。 |
-| Claude Code | [Claude Code MCP guide](docs/integrations/claude-code-mcp.md) | 基于 MCP 的搜索接入和项目边界。 |
-| OpenClaw | [OpenClaw example](examples/openclaw/README.md) | 操作员管理的搜索 hook 和 review gate。 |
-| 通用 agents | [Generic example](examples/generic/README.md) | 不绑定具体 runtime 的通用模式。 |
-
-## 可安装 Companion
-
-本仓库是 awesome list：负责对比、要求、研究笔记、加固建议和 AI 可读索引。
-
-可运行安装请使用 [oh-my-agent-search](https://github.com/DeeeFOX/oh-my-agent-search)。该 companion 负责安装命令、Claude Code 自助接入流程、安装后检查、生命周期说明和卸载指引。
-
-## 内容分类
-
-### 最佳实践
-
-- [中文最佳实践](docs/zh-CN/best-practices.md)
-- [Core best practices](docs/best-practices.md)
-- [Known issues and decisions](docs/known-issues.md)
-- [Evaluation dimensions](docs/evaluation.md)
-
-### 集成
-
-- [Integration guide index](docs/integrations/README.md)
-- [Claude Code MCP guide](docs/integrations/claude-code-mcp.md)
-- [Claude Code MCP 指南](docs/zh-CN/claude-code-mcp.md)
-- [Claude Code bootstrap requirements](docs/integrations/claude-code-bootstrap-requirements.md)
-- [Claude Code Bootstrap 要求](docs/zh-CN/claude-code-bootstrap-requirements.md)
-- [Codex example](examples/codex/README.md)
-- [Claude Code example](examples/claude-code/README.md)
-- [OpenClaw example](examples/openclaw/README.md)
-- [Generic example](examples/generic/README.md)
-
-### 加固
-
-- [Hardening checklist index](docs/hardening/README.md)
-- [SearXNG deployment hardening](docs/hardening/searxng-deployment.md)
-- [SearXNG 部署加固](docs/zh-CN/searxng-deployment-hardening.md)
-- [Security policy](SECURITY.md)
-
-### 研究和评估
-
-- [Companion repository boundary](docs/companion-repository.md)
-- [Research note index](docs/research/README.md)
-- [SearXNG MCP integration for Claude Code](docs/research/searxng-claude-code-mcp.md)
-- [SearXNG MCP 与 Claude Code 集成研究](docs/zh-CN/searxng-claude-code-mcp.md)
-- [eze-is/web-access 浏览器检索笔记](docs/zh-CN/web-access-browser-retrieval.md)
-- [搜索能力接入方案对比](docs/zh-CN/search-integration-strategies.md)
-- [Search backend comparison](docs/comparisons/search-backends.md)
-- [MCP SearXNG server comparison](docs/comparisons/mcp-searxng-servers.md)
-- [对比调研 issue backlog](docs/zh-CN/comparison-issues.md)
-- [Research report template](templates/research-report-template.md)
-
-### 双语文档
-
-- [中文文档索引](docs/zh-CN/README.md)
-- [中文搜索发现](docs/zh-CN/discovery.md)
-- [中文最佳实践](docs/zh-CN/best-practices.md)
-- [搜索能力接入方案对比](docs/zh-CN/search-integration-strategies.md)
-- [搜索后端对比](docs/zh-CN/search-backends.md)
-- [MCP SearXNG server 对比](docs/zh-CN/mcp-searxng-servers.md)
-- [Claude Code MCP 指南](docs/zh-CN/claude-code-mcp.md)
-- [Claude Code Bootstrap 要求](docs/zh-CN/claude-code-bootstrap-requirements.md)
-- [SearXNG 部署加固](docs/zh-CN/searxng-deployment-hardening.md)
-- [SearXNG MCP 与 Claude Code 集成研究](docs/zh-CN/searxng-claude-code-mcp.md)
-- [eze-is/web-access 与浏览器检索](docs/zh-CN/web-access-browser-retrieval.md)
-- [对比调研 Issue Backlog](docs/zh-CN/comparison-issues.md)
-- [Internationalization policy](docs/i18n.md)
-
-### 机器可读层
-
-- [Agent guide](AGENTS.md)
-- [Resource registry](registry/resources.json)
-- [Registry index](docs/registry-index.md)
-- [Resource schema](schemas/resource.schema.json)
-- [Registry validator](scripts/validate-registry.mjs)
-
-### 发布和传播
-
-- [Social preview guide](docs/social-preview.md)
-- [Social preview PNG](assets/social-preview.png)
-- [Launch post](docs/launch-post.md)
-- [Launch checklist](docs/launch-checklist.md)
-- [仓库曝光清单](docs/zh-CN/visibility-checklist.md)
-- [v0.1.0 release notes 草案](docs/zh-CN/release-v0.1.0.md)
-- [v0.2.0 release notes 草案](docs/zh-CN/release-v0.2.0.md)
+| 方案 | 已调研案例 / 官方入口 | 最佳实践入口 | 优势 | 不足 | Agent 支持矩阵 |
+| --- | --- | --- | --- | --- | --- |
+| 原生或 provider-managed web search | [OpenAI Web Search](https://developers.openai.com/api/docs/guides/tools-web-search), [Claude MCP Web Search](https://support.claude.com/en/articles/14503775-mcp-web-search) | [搜索能力接入方案对比](docs/zh-CN/search-integration-strategies.md) | runtime 已提供能力时启用最快；体验集成度高。 | 对 backend choice、routing、logging 和可复现性的控制较弱。 | Codex、Claude Code：取决于 runtime、workspace 或账号能力。 |
+| MCP 搜索适配器 | [Claude Code MCP docs](https://code.claude.com/docs/en/mcp) | [Claude Code MCP guide](docs/integrations/claude-code-mcp.md), [对比调研 issue backlog](docs/zh-CN/comparison-issues.md) | 工具边界清晰；后端可替换；agent 行为更容易审计。 | 需要管理 install scope、lifecycle、权限、凭据和 schema。 | Claude Code、MCP-capable agents，以及自定义 Codex/OpenClaw adapters。 |
+| 自托管 SearXNG | [SearXNG docs](https://docs.searxng.org/) | [SearXNG 部署加固](docs/zh-CN/searxng-deployment-hardening.md), [SearXNG MCP 研究笔记](docs/zh-CN/searxng-claude-code-mcp.md), [oh-my-agent-search](https://github.com/DeeeFOX/oh-my-agent-search) | operator 可控引擎、格式、日志和部署策略。 | 需要运维；engine availability 和结果质量受环境影响。 | Claude Code：companion 已验证；Codex/OpenClaw/通用 agents：通过 MCP 或自定义 adapter。 |
+| Hosted search APIs | [Brave Search API](https://brave.com/search/api/), [Tavily API](https://docs.tavily.com/api-reference/introduction) | [搜索后端对比](docs/zh-CN/search-backends.md), [Hosted API backlog](docs/zh-CN/comparison-issues.md) | 托管可用性高；API 形态简单；适合产品集成。 | 需要评估 provider trust、data policy、quota、cost 和 vendor lock-in。 | 能调用 tools、MCP servers、SDKs 或 HTTP wrappers 的 agents。 |
+| 浏览器/CDP 检索 | [eze-is/web-access](https://github.com/eze-is/web-access) | [web-access 浏览器检索笔记](docs/zh-CN/web-access-browser-retrieval.md), [Browser retrieval backlog](docs/zh-CN/comparison-issues.md) | 支持渲染页面、交互、截图和页面状态证据。 | 更慢、更脆弱；browser profile、cookie、session 和 prompt injection 需要额外处理。 | 当前更贴近 Claude Code skill workflows；原则上适合具备浏览器能力的 agents。 |
+| 本地或私有文档搜索 | repository search、docs mirror、private index | [最佳实践](docs/zh-CN/best-practices.md), [Evaluation](docs/evaluation.md) | 快速、可复现，且不会把私有上下文发送到外部服务。 | freshness 依赖索引维护和镜像覆盖范围。 | 所有 agents；通常应先于外部搜索使用。 |
+| 混合路由 | local docs + native search + MCP + APIs + browser retrieval | [搜索能力接入方案对比](docs/zh-CN/search-integration-strategies.md), [Hybrid routing backlog](docs/zh-CN/comparison-issues.md) | 可按 query 和任务选择最低风险路径。 | 需要清晰 policy、observability、fallback 和评估纪律。 | 成熟的 multi-tool agents 和团队托管 workflows。 |
 
 ## 给 AI Agents
 
@@ -155,7 +46,7 @@ AI agents 应该：
 
 1. 读取 [AGENTS.md](AGENTS.md)。
 2. 读取 [registry/resources.json](registry/resources.json)。
-3. 选择最接近的 guide、example 或 template。
+3. 选择最接近的 guide、comparison、research note 或 template。
 4. 保持 query、endpoint、path 和 example 公开安全。
 5. 可运行安装命令应放在安装型 companion，而不是放在这个 awesome list。
 6. 提交前运行 `make review`。
@@ -164,21 +55,43 @@ AI agents 应该：
 
 ## 为什么是 Awesome，不是 Oh My
 
-这个仓库叫 `awesome-agent-search`，因为它是精选最佳实践和集成 hub。
+这个仓库叫 `awesome-agent-search`，因为它是精选调研和最佳实践 hub。
 
-`oh-my-*` 更像安装包、插件框架或一键增强工具。可运行设置应放在独立 companion：[oh-my-agent-search](https://github.com/DeeeFOX/oh-my-agent-search)。
+`oh-my-*` 更像安装包、插件框架或一键增强工具。可运行设置应放在 companion 仓库，例如 [oh-my-agent-search](https://github.com/DeeeFOX/oh-my-agent-search)。
 
-## 参考项目
+当前 awesome 仓库和可安装 companion 的边界见 [Companion repository boundary](docs/companion-repository.md)。
 
-- [sindresorhus/awesome](https://github.com/sindresorhus/awesome) - curated list 规范。
-- [ohmyzsh/ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) - 社区文档和 onboarding 结构。
-- [subinium/awesome-claude-code](https://github.com/subinium/awesome-claude-code) - AI coding-agent 生态分类。
-- [searxng/searx-instances](https://github.com/searxng/searx-instances) - 结构化提交和 review workflow。
-- [SearXNG docs](https://docs.searxng.org/) - SearXNG 行为、配置和运维。
+## 资源和参考
 
-## 仓库结构
+| 分类 | 资源 | 用途 |
+| --- | --- | --- |
+| 核心实践 | [最佳实践](docs/zh-CN/best-practices.md) | query design、fallback、logging、citation 和安全贡献规则。 |
+| 策略对比 | [搜索能力接入方案对比](docs/zh-CN/search-integration-strategies.md) | 在原生搜索、MCP、SearXNG、hosted APIs、浏览器检索、本地文档和混合路由之间做选择。 |
+| 后端对比 | [搜索后端对比](docs/zh-CN/search-backends.md) | 比较原生搜索、SearXNG、hosted APIs、浏览器检索和 direct search 的取舍。 |
+| 浏览器路线 | [eze-is/web-access 笔记](docs/zh-CN/web-access-browser-retrieval.md) | 理解 browser/CDP retrieval 作为 Claude Code 代表路径的价值和限制。 |
+| SearXNG 路线 | [SearXNG 部署加固](docs/zh-CN/searxng-deployment-hardening.md) | 加固面向 agent workflows 的自托管或托管 SearXNG。 |
+| MCP 路线 | [Claude Code MCP guide](docs/integrations/claude-code-mcp.md) | 通过显式 MCP tools 为 Claude Code 接入搜索。 |
+| 调研队列 | [对比调研 issue backlog](docs/zh-CN/comparison-issues.md) | 将聚焦的对比任务发布成 GitHub issues。 |
+| Registry | [Machine-readable registry](registry/resources.json) 和 [registry index](docs/registry-index.md) | 帮助人和 agents 发现长期资源。 |
+| 英文文档 | [English README](README.md) | 英文 canonical source。 |
+| 参考项目 | [sindresorhus/awesome](https://github.com/sindresorhus/awesome) | curated-list 规范。 |
+| 参考项目 | [ohmyzsh/ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) | 社区文档和 onboarding 结构。 |
+| 参考项目 | [subinium/awesome-claude-code](https://github.com/subinium/awesome-claude-code) | AI coding-agent 生态分类。 |
+| 参考项目 | [searxng/searx-instances](https://github.com/searxng/searx-instances) | 结构化提交和 review workflow。 |
 
-- [docs/](docs): 定位、架构、集成、加固、i18n、研究、评估、发布和提交指南。
+## 附录：仓库导航
+
+| 读者 | 入口 | 用途 |
+| --- | --- | --- |
+| 人类读者 | [最佳实践](docs/zh-CN/best-practices.md) | 理解核心 agent 搜索实践。 |
+| AI agents | [AGENTS.md](AGENTS.md) | 遵守编辑、验证和隐私规则。 |
+| 集成者 | [集成指南](docs/integrations/README.md) | 将 agent 接入搜索工具、后端和适配器。 |
+| 研究者 | [研究笔记](docs/research/README.md) | 阅读和贡献公开安全的研究结果。 |
+| 维护者 | [提交指南](docs/submission-guide.md) | 审核 issue、PR 和 registry entries。 |
+
+仓库结构：
+
+- [docs/](docs): 定位、架构、对比、集成、加固、i18n、研究、评估、roadmap、发布和提交指南。
 - [examples/](examples): 按生态划分的最小集成模式。
 - [registry/resources.json](registry/resources.json): 机器可读资源目录。
 - [templates/](templates): 可复用的集成和研究模板。
