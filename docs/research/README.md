@@ -14,6 +14,7 @@ This directory contains public-safe research notes derived from experiments, com
 ## Current Notes
 
 - [SearXNG search backend research](searxng-search-backend-research.md)
+- [Brave Search API research](brave-search-api.md)
 - [DuckDuckGo Instant Answer API research](duckduckgo-instant-answer-api.md)
 - [eze-is/web-access and Browser Retrieval](web-access-browser-retrieval.md)
 

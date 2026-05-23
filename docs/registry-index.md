@@ -32,6 +32,8 @@ make generate-registry-index
 
 | Resource | Type | Ecosystem | Maturity | Language | Summary |
 | --- | --- | --- | --- | --- | --- |
+| [Brave Search API research](../docs/research/brave-search-api.md) | `research` | `multi-agent` | `starter` | `en` | Research report on Brave Search API as a hosted independent-index search candidate for coding agents. |
+| [Brave Search API 调研](../docs/zh-CN/brave-search-api.md) | `research` | `multi-agent` | `starter` | `zh-CN` -> `brave-search-api-research` | Brave Search API 作为 coding agents 的 hosted independent-index search candidate 的中文对照调研。 |
 | [DuckDuckGo Instant Answer API research](../docs/research/duckduckgo-instant-answer-api.md) | `research` | `multi-agent` | `starter` | `en` | Research report on DuckDuckGo Instant Answer API as a lightweight fallback signal rather than a primary coding-agent search backend. |
 | [DuckDuckGo Instant Answer API 调研](../docs/zh-CN/duckduckgo-instant-answer-api.md) | `research` | `multi-agent` | `starter` | `zh-CN` -> `duckduckgo-instant-answer-api-research` | DuckDuckGo Instant Answer API 作为轻量 fallback signal、而不是 coding-agent 主搜索后端的中文对照调研。 |
 | [Evaluation](../docs/evaluation.md) | `research` | `multi-agent` | `starter` | `en` | Evaluation dimensions for comparing agent search approaches. |

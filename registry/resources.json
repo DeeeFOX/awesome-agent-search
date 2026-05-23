@@ -420,6 +420,31 @@
       "public": true
     },
     {
+      "id": "brave-search-api-research",
+      "title": "Brave Search API research",
+      "type": "research",
+      "ecosystem": "multi-agent",
+      "summary": "Research report on Brave Search API as a hosted independent-index search candidate for coding agents.",
+      "language": "en",
+      "path": "docs/research/brave-search-api.md",
+      "tags": ["research", "search", "brave-search", "hosted-api", "privacy"],
+      "maturity": "starter",
+      "public": true
+    },
+    {
+      "id": "brave-search-api-research-zh-cn",
+      "title": "Brave Search API 调研",
+      "type": "research",
+      "ecosystem": "multi-agent",
+      "summary": "Brave Search API 作为 coding agents 的 hosted independent-index search candidate 的中文对照调研。",
+      "language": "zh-CN",
+      "translationOf": "brave-search-api-research",
+      "path": "docs/zh-CN/brave-search-api.md",
+      "tags": ["research", "search", "brave-search", "hosted-api", "privacy", "translation", "zh-cn"],
+      "maturity": "starter",
+      "public": true
+    },
+    {
       "id": "duckduckgo-instant-answer-api-research-zh-cn",
       "title": "DuckDuckGo Instant Answer API 调研",
       "type": "research",
