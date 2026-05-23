@@ -8,14 +8,37 @@ body:
     id: question
     attributes:
       label: Research Question
+      description: What decision should this research help agent builders make?
+    validations:
+      required: true
+  - type: textarea
+    id: matrix
+    attributes:
+      label: Matrix Row Or Gap
+      description: Which README matrix row or comparison gap should this research fill?
+    validations:
+      required: true
+  - type: textarea
+    id: official_sources
+    attributes:
+      label: Required Official Sources
+      description: List primary docs or repositories to verify. Date volatile details in the report.
     validations:
       required: true
   - type: textarea
     id: method
     attributes:
       label: Method
+      description: Include public-safe query set, ecosystems in scope, and what will not be tested.
     validations:
       required: true
+  - type: textarea
+    id: visual_evidence
+    attributes:
+      label: Visual Evidence
+      description: Planned diagram, scorecard, decision table, sanitized screenshot, or result-shape sample.
+    validations:
+      required: false
   - type: textarea
     id: findings
     attributes:
@@ -32,5 +55,13 @@ body:
     id: privacy
     attributes:
       label: Privacy Notes
+      description: Do not include secrets, private paths, private endpoints, cookies, tokens, account identifiers, or private screenshots.
     validations:
       required: false
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: Include the README matrix update expected from this research.
+    validations:
+      required: true
