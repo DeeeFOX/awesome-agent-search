@@ -458,6 +458,18 @@
       "public": true
     },
     {
+      "id": "batch-1-research-issue-drafts",
+      "title": "Batch 1 research issue drafts",
+      "type": "reference",
+      "ecosystem": "multi-agent",
+      "summary": "Publish-ready GitHub issue body drafts for filling the first agent-search option matrix gaps.",
+      "language": "en",
+      "path": "docs/roadmap/issue-drafts/README.md",
+      "tags": ["roadmap", "issues", "research", "matrix", "drafts"],
+      "maturity": "starter",
+      "public": true
+    },
+    {
       "id": "research-notes",
       "title": "Research notes",
       "type": "research",

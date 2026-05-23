@@ -47,6 +47,7 @@ make generate-registry-index
 | --- | --- | --- | --- | --- | --- |
 | [Agent guide](../AGENTS.md) | `reference` | `multi-agent` | `recommended` | `en` | Repository-level operating rules for autonomous agent contributors. |
 | [Architecture](../docs/architecture.md) | `reference` | `multi-agent` | `recommended` | `en` | Repository structure and content-layer model for humans and AI agents. |
+| [Batch 1 research issue drafts](../docs/roadmap/issue-drafts/README.md) | `reference` | `multi-agent` | `starter` | `en` | Publish-ready GitHub issue body drafts for filling the first agent-search option matrix gaps. |
 | [Companion repository boundary](../docs/companion-repository.md) | `reference` | `multi-agent` | `starter` | `en` | Boundary between the awesome-agent-search knowledge base and the oh-my-agent-search installable companion. |
 | [Comparison issue backlog](../docs/roadmap/comparison-issues.md) | `reference` | `multi-agent` | `starter` | `en` | Local staging backlog for GitHub issues comparing agent search integration strategies and backends. |
 | [对比调研 Issue Backlog](../docs/zh-CN/comparison-issues.md) | `reference` | `multi-agent` | `starter` | `zh-CN` -> `comparison-issue-backlog` | 用于发布 GitHub issues 前整理 agent 搜索接入策略和后端对比任务的中文本地 backlog。 |
