@@ -32,6 +32,8 @@ make generate-registry-index
 
 | Resource | Type | Ecosystem | Maturity | Language | Summary |
 | --- | --- | --- | --- | --- | --- |
+| [DuckDuckGo Instant Answer API research](../docs/research/duckduckgo-instant-answer-api.md) | `research` | `multi-agent` | `starter` | `en` | Research report on DuckDuckGo Instant Answer API as a lightweight fallback signal rather than a primary coding-agent search backend. |
+| [DuckDuckGo Instant Answer API 调研](../docs/zh-CN/duckduckgo-instant-answer-api.md) | `research` | `multi-agent` | `starter` | `zh-CN` -> `duckduckgo-instant-answer-api-research` | DuckDuckGo Instant Answer API 作为轻量 fallback signal、而不是 coding-agent 主搜索后端的中文对照调研。 |
 | [Evaluation](../docs/evaluation.md) | `research` | `multi-agent` | `starter` | `en` | Evaluation dimensions for comparing agent search approaches. |
 | [Research notes](../docs/research/README.md) | `research` | `multi-agent` | `starter` | `en` | Index of sanitized public research notes derived from experiments, comparisons, and integration studies. |
 | [Search integration strategies](../docs/comparisons/search-integration-strategies.md) | `research` | `multi-agent` | `starter` | `en` | Strategy comparison for bringing search into coding agents through native search, MCP, SearXNG, hosted APIs, browser retrieval, local docs, and hybrid routing. |

@@ -408,6 +408,31 @@
       "public": true
     },
     {
+      "id": "duckduckgo-instant-answer-api-research",
+      "title": "DuckDuckGo Instant Answer API research",
+      "type": "research",
+      "ecosystem": "multi-agent",
+      "summary": "Research report on DuckDuckGo Instant Answer API as a lightweight fallback signal rather than a primary coding-agent search backend.",
+      "language": "en",
+      "path": "docs/research/duckduckgo-instant-answer-api.md",
+      "tags": ["research", "search", "duckduckgo", "fallback", "instant-answer"],
+      "maturity": "starter",
+      "public": true
+    },
+    {
+      "id": "duckduckgo-instant-answer-api-research-zh-cn",
+      "title": "DuckDuckGo Instant Answer API 调研",
+      "type": "research",
+      "ecosystem": "multi-agent",
+      "summary": "DuckDuckGo Instant Answer API 作为轻量 fallback signal、而不是 coding-agent 主搜索后端的中文对照调研。",
+      "language": "zh-CN",
+      "translationOf": "duckduckgo-instant-answer-api-research",
+      "path": "docs/zh-CN/duckduckgo-instant-answer-api.md",
+      "tags": ["research", "search", "duckduckgo", "fallback", "instant-answer", "translation", "zh-cn"],
+      "maturity": "starter",
+      "public": true
+    },
+    {
       "id": "search-integration-strategies",
       "title": "Search integration strategies",
       "type": "research",
