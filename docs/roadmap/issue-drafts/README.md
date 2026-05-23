@@ -1,8 +1,20 @@
 # Batch 1 Research Issue Drafts
 
-These drafts are ready-to-publish GitHub issue bodies for the first matrix-filling research batch.
+These drafts are the source bodies for the first matrix-filling research batch.
 
-Publish only after `gh auth status` succeeds:
+Published on 2026-05-23:
+
+- [#5 OpenAI Web Search as a coding-agent search route](https://github.com/DeeeFOX/awesome-agent-search/issues/5)
+- [#3 Claude MCP Web Search as a provider-managed search route](https://github.com/DeeeFOX/awesome-agent-search/issues/3)
+- [#4 Brave Search API for coding-agent search](https://github.com/DeeeFOX/awesome-agent-search/issues/4)
+- [#2 Tavily API for coding-agent retrieval](https://github.com/DeeeFOX/awesome-agent-search/issues/2)
+- [#1 DuckDuckGo Instant Answer API as an agent fallback](https://github.com/DeeeFOX/awesome-agent-search/issues/1)
+
+If the issue scope changes later, update the corresponding draft and issue together.
+
+## Recreate Commands
+
+Use these only when recreating the batch in another repository or after intentionally closing and replacing the published issues.
 
 ```sh
 gh issue create --title "[Research] OpenAI Web Search as a coding-agent search route" --label research --body-file docs/roadmap/issue-drafts/openai-web-search.md
