@@ -4,15 +4,6 @@
 
 When should an agent-search workflow use SearXNG, and which SearXNG deployment pattern is appropriate?
 
-## Source Material
-
-This report merges and sanitizes two local inputs:
-
-- a local Chinese research draft named `研究报告.md`
-- the previous search-backend comparison note in this repository
-
-The raw draft is not published because it contained local machine paths, environment-specific setup notes, regional connectivity workarounds, command transcripts, and values that are not appropriate for an awesome-list repository.
-
 ## Scope
 
 This is a research and comparison note. It is not an installation guide.
@@ -82,23 +73,3 @@ Agents using any SearXNG-backed route should:
 - prefer official documentation, release notes, primary repositories, standards, and security advisories
 - cite opened public URLs, not only snippets
 - state backend limitations when results are sparse, duplicated, stale, or conflicting
-
-## Research Gaps
-
-This report does not cover:
-
-- Brave Search API evidence for coding agents
-- Tavily evidence for coding agents
-- browser/CDP retrieval quality beyond the separate `eze-is/web-access` note
-- native/provider-managed search quality in current Codex or Claude Code environments
-- quantitative benchmarks across latency, relevance, cost, and citation quality
-
-Rows for those options should remain marked as `调研中` until dedicated reports exist.
-
-## Sanitization Notes
-
-- Local paths and usernames were removed.
-- Environment-specific command transcripts were excluded.
-- Regional service workarounds were excluded.
-- Secrets, tokens, cookies, private endpoints, account identifiers, and session material must not appear in examples.
-- Installation steps were left to the installable companion repository.

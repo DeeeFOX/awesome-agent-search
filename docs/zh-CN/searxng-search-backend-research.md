@@ -6,15 +6,6 @@
 
 Agent 搜索工作流什么时候应该使用 SearXNG？应该选择哪一种 SearXNG 部署形态？
 
-## 来源材料
-
-本文融合并脱敏了两份本地输入：
-
-- 本地中文调研草稿 `研究报告.md`
-- 本仓库之前的后端比较笔记
-
-原始草稿不公开发布，因为其中包含本机路径、环境特定设置说明、地区网络可达性处理步骤、命令记录，以及不适合放在 awesome-list 仓库里的值。
-
 ## 范围
 
 本文是调研和对比说明，不是安装指南。
@@ -84,23 +75,3 @@ MCP 可以通过可见工具边界把 SearXNG search 暴露给 agent，从而提
 - 优先引用官方文档、release notes、主仓库、标准和安全公告
 - 引用打开过的公开 URL，而不是只引用 snippet
 - 当结果稀疏、重复、过期或冲突时，说明 backend limitations
-
-## 调研缺口
-
-本文不覆盖：
-
-- Brave Search API 在 coding agents 中的证据
-- Tavily 在 coding agents 中的证据
-- 除 `eze-is/web-access` 独立笔记以外的 browser/CDP retrieval 质量
-- 当前 Codex 或 Claude Code 环境中的 native/provider-managed search 质量
-- latency、relevance、cost 和 citation quality 的定量 benchmark
-
-这些方案在网格中应继续标记为 `调研中`，直到存在独立调研报告。
-
-## 脱敏说明
-
-- 已移除本机路径和用户名。
-- 已排除环境特定命令记录。
-- 已排除地区服务可达性处理步骤。
-- Secrets、tokens、cookies、private endpoints、account identifiers 和 session material 不得出现在示例中。
-- 安装步骤保留给安装型 companion 仓库。
