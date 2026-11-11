@@ -17,6 +17,7 @@ This directory contains public-safe research notes derived from experiments, com
 - [Brave Search API research](brave-search-api.md)
 - [DuckDuckGo Instant Answer API research](duckduckgo-instant-answer-api.md)
 - [eze-is/web-access and Browser Retrieval](web-access-browser-retrieval.md)
+- [FlashData Google Search and YouTube MCP documentation review](flashdata-mcp.md)
 
 ## Derived Guides
 
