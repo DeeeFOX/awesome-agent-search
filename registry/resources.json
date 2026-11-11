@@ -408,6 +408,18 @@
       "public": true
     },
     {
+      "id": "flashdata-mcp-documentation-review",
+      "title": "FlashData Google Search and YouTube MCP documentation review",
+      "type": "research",
+      "ecosystem": "multi-agent",
+      "summary": "Vendor-authored public documentation review of FlashData hosted MCP search/video capabilities, paid-data boundaries and untested operational questions.",
+      "language": "en",
+      "path": "docs/research/flashdata-mcp.md",
+      "tags": ["research", "search", "mcp", "youtube", "hosted-api"],
+      "maturity": "starter",
+      "public": true
+    },
+    {
       "id": "duckduckgo-instant-answer-api-research",
       "title": "DuckDuckGo Instant Answer API research",
       "type": "research",
